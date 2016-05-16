@@ -1,0 +1,4269 @@
+# Traditional Chinese translations for po package
+# Copyright (C) 2016 Free Software Foundation, Inc.
+# This file is distributed under the same license as the po package.
+#
+# szlin <lin.sunze@gmail.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: packaging-tutorial 0.15\n"
+"POT-Creation-Date: 2014-10-16 20:16+0200\n"
+"PO-Revision-Date: 2016-05-04 16:02+0800\n"
+"Last-Translator: SZ Lin (林上智) <lin.sunze@gmail.com>\n"
+"Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
+"debian.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: packaging-tutorial.tex:4
+msgid "\\mode<presentation> \\usetheme{debian}"
+msgstr "\\mode<presentation> \\usetheme{debian}"
+
+#. Translators:
+#. change debiantutorial to debiantutorial.$lang to use translated file, and
+#. append to this string all commands to load localisation packages, e.g.:
+#. \\usepackage{debiantutorial.fr} \\usepackage[french]{babel} \\frenchsetup{...}
+#. type: Plain text
+#: packaging-tutorial.tex:10
+msgid "\\usepackage{debiantutorial}"
+msgstr ""
+"\\usepackage{debiantutorial.zh_TW}\\hypersetup{unicode}\\usepackage[whole]"
+"{bxcjkjatype}\\setminchofont{DroidSansFallbackFull."
+"ttf}\\setgothicfont{DroidSansFallbackFull.ttf}"
+
+#. type: title{#2}
+#: packaging-tutorial.tex:14
+msgid "Debian Packaging Tutorial"
+msgstr "Debian 套件打包教學指南"
+
+#. type: author{#2}
+#: packaging-tutorial.tex:14
+msgid ""
+"Lucas Nussbaum\\\\{\\small\\texttt{packaging-tutorial@packages.debian.org}}"
+msgstr ""
+"Lucas Nussbaum\\\\{\\small\\texttt{packaging-tutorial@packages.debian.org}}"
+
+#. Translators:
+#. leave \\version unchanged: this will a variable containing the actual version
+#. To translate the date, use \\today or a string containing \\year, \\month, \\day
+#. (numeric values).
+#.  DATE - use debian/rules update-version-date
+#. type: date{#1}
+#: packaging-tutorial.tex:20
+msgid "version 0.15 -- 2014-10-16"
+msgstr "version 0.15 -- 2014-10-16"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:52
+msgid "About this tutorial"
+msgstr "關於此教學指南"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid ""
+"Goal: \\textbf{tell you what you really need to know about Debian packaging}"
+msgstr "目標: \\textbf{瞭解 Debian 套件打包的相關知識}"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "Modify existing packages"
+msgstr "修改既有套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "Create your own packages"
+msgstr "新增自有套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "Interact with the Debian community"
+msgstr "和 Debian 社群進行交流"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "Become a Debian power-user"
+msgstr "成為 Debian 進階使用者"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "Covers the most important points, but is not complete"
+msgstr "這份教學指南針對重要功能進行介紹, 但也許會有疏漏之處"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "You will need to read more documentation"
+msgstr "所以你需要閱讀更多文件"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "Most of the content also applies to Debian derivative distributions"
+msgstr "文件大部份的內容也適用於 Debian 衍生的 Linux發行版"
+
+#. type: itemize
+#: packaging-tutorial.tex:52
+msgid "That includes Ubuntu"
+msgstr "其中包含 Ubuntu"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:56 debiantutorial.sty:42
+msgid "Outline"
+msgstr "大綱"
+
+#. type: section{#2}
+#: packaging-tutorial.tex:58
+msgid "Introduction"
+msgstr "介紹"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:60 packaging-tutorial.tex:84
+msgid "Debian"
+msgstr "Debian"
+
+#. type: textbf{#1}
+#: packaging-tutorial.tex:84
+msgid "GNU/Linux distribution"
+msgstr "GNU/Linux 發行版"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid "1st major distro developed ``openly in the spirit of GNU''"
+msgstr "第一個以 GNU 開源精神進行開發的主要發行版"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid ""
+"\\textbf{Non-commercial}, built collaboratively by over 1,000 volunteers"
+msgstr "\\textbf{非營利}, 由超過1000個志願者協同開發而成"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid "3 main features:"
+msgstr "三個主要特色"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid ""
+"\\textbf{Quality} -- culture of technical excellence\\\\ {\\small\\sl We "
+"release when it's ready}"
+msgstr "\\textbf{品質} -- 卓越的技術文化\\\\ {\\small\\sl 準備好才會發行}"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid ""
+"\\textbf{Freedom} -- devs and users bound by the \\textsl{Social Contract}\\"
+"\\ Promoting the culture of Free Software since 1993"
+msgstr ""
+"\\textbf{自由} -- 開發者以及使用者皆遵循 \\textsl{社會契約}\\\\ 並發揚自1993"
+"年起開始倡導的自由軟體文化"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid ""
+"\\textbf{Independence} -- no (single) company babysitting Debian\\\\ And "
+"open decision-making process (\\textsl{do-ocracy} + \\textsl{democracy})"
+msgstr ""
+"\\textbf{獨立} -- Debian 不被任何一間公司所擁有\\\\ 決策過程一切透明化 "
+"(\\textsl{行動至上} + \\textsl{民主})"
+
+#. type: itemize
+#: packaging-tutorial.tex:84
+msgid "\\textbf{Amateur} in the best sense: done for the love of it"
+msgstr "對於\\textbf{業餘開發者} 來說最大的意義: 因本身喜愛而去完成這些事"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:105
+msgid "Debian packages"
+msgstr "Debian 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid "\\textbf{.deb} files (binary packages)"
+msgstr "\\textbf{.deb} 檔案 (二進制 套件)"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid "A very powerful and convenient way to distribute software to users"
+msgstr "以有效且合宜的方法來向使用者發佈軟體"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid "One of the two most common package formats (with RPM)"
+msgstr "是兩個最常見的套件格式之一 (另一個為 RPM)"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid "Universal:"
+msgstr "一般來說"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid ""
+"30,000 binary packages in Debian\\\\ $\\rightarrow$ most of the available "
+"free software is packaged in Debian!"
+msgstr ""
+"Debian 有 30,000 個二進制套件\\\\ $\\rightarrow$ 絕大部份的自由軟體皆已經打包"
+"並放進 Debian"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid "For 12 ports (architectures), including 2 non-Linux (Hurd; KFreeBSD)"
+msgstr "支援 12 種 CPU 架構, 其中包含 2 個非 Linux 相關(Hurd; KFreeBSD)"
+
+#. type: itemize
+#: packaging-tutorial.tex:105
+msgid "Also used by 120 Debian derivative distributions"
+msgstr "Debian 被其衍生120個發行版所使用"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:108 packaging-tutorial.tex:133
+msgid "The Deb package format"
+msgstr "Deb 套件格式"
+
+#. type: itemize
+#: packaging-tutorial.tex:133
+msgid "\\texttt{.deb} file: an \\texttt{ar} archive"
+msgstr "\\texttt{.deb} 檔案: 是 \\texttt{ar} 靜態函式庫格式"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:133
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"$ ar tv wget_1.12-2.1_i386.deb\n"
+"rw-r--r-- 0/0      4 Sep  5 15:43 2010 debian-binary\n"
+"rw-r--r-- 0/0   2403 Sep  5 15:43 2010 control.tar.gz\n"
+"rw-r--r-- 0/0 751613 Sep  5 15:43 2010 data.tar.gz\n"
+"    "
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"$ ar tv wget_1.12-2.1_i386.deb\n"
+"rw-r--r-- 0/0      4 Sep  5 15:43 2010 debian-binary\n"
+"rw-r--r-- 0/0   2403 Sep  5 15:43 2010 control.tar.gz\n"
+"rw-r--r-- 0/0 751613 Sep  5 15:43 2010 data.tar.gz\n"
+"    "
+
+#.  $
+#. type: itemize
+#: packaging-tutorial.tex:133
+msgid ""
+"\\texttt{debian-binary}: version of the deb file format, "
+"\\texttt{\"2.0\\textbackslash{}n\"}"
+msgstr ""
+"\\texttt{debian-binary}: deb檔案格式的版本, \\texttt{\"2.0\\textbackslash{}n"
+"\"}"
+
+#. type: itemize
+#: packaging-tutorial.tex:133
+msgid ""
+"\\texttt{control.tar.gz}: metadata about the package\\\\ {\\small "
+"\\texttt{\\textbf{control}, md5sums, (pre|post)(rm|inst), triggers, shlibs}, "
+"\\ldots}"
+msgstr ""
+"\\texttt{control.tar.gz}: 描述套件相關資訊的檔案\\\\ {\\small "
+"\\texttt{\\textbf{control}, md5sums, (pre|post)(rm|inst), triggers, shlibs}, "
+"\\ldots}"
+
+#. type: itemize
+#: packaging-tutorial.tex:133
+msgid "\\texttt{data.tar.gz}: data files of the package"
+msgstr "\\texttt{data.tar.gz}: 套件裡的資料"
+
+#. type: itemize
+#: packaging-tutorial.tex:133
+msgid ""
+"You could create your \\texttt{.deb} files manually\\\\ {\\footnotesize "
+"\\url{http://tldp.org/HOWTO/html\\_single/Debian-Binary-Package-Building-"
+"HOWTO/}}"
+msgstr ""
+"你可以手動製作 \\texttt{.deb} 檔案 \\\\ {\\footnotesize \\url{http://tldp."
+"org/HOWTO/html\\_single/Debian-Binary-Package-Building-HOWTO/}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:133
+msgid "But most people don't do it that way"
+msgstr "但大部份的人不會使用那種方法"
+
+#. type: textbf{#1}
+#: packaging-tutorial.tex:133
+msgid "This tutorial: create Debian packages, the Debian way"
+msgstr "這份教學指南: 以 Debian 風格來製作 Debian 套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:153
+msgid "Tools you will need"
+msgstr "開發必需之工具"
+
+#. type: itemize
+#: packaging-tutorial.tex:153
+msgid "A Debian (or Ubuntu) system (with root access)"
+msgstr "一台能以 root 權限存取的 Debian (or Ubuntu) 系統"
+
+#. type: itemize
+#: packaging-tutorial.tex:153
+msgid "Some packages:"
+msgstr "一些必需套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:153
+msgid ""
+"\\textbf{build-essential}: has dependencies on the packages that will be "
+"assumed to be available on the developer's machine (no need to specify them "
+"in the \\texttt{Build-Depends:} control field of your package)"
+msgstr ""
+"\\textbf{build-essential}: 和 Debian 套件有相依性並假定已安裝在開發者的機器"
+"上 (不需在套件中的 control 欄位特別指定 \\texttt{Build-Depends:} )"
+
+#. type: itemize
+#: packaging-tutorial.tex:153
+msgid ""
+"includes a dependency on \\textbf{dpkg-dev}, which contains basic Debian-"
+"specific tools to create packages"
+msgstr ""
+"相依 \\textbf{dpkg-dev} 套件, 其中包含基本 Debian 特定工具, 以便於製作 "
+"Debian 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:153
+msgid ""
+"\\textbf{devscripts}: contains many useful scripts for Debian maintainers"
+msgstr "\\textbf{devscripts}: 此套件提供許多便於開發的腳本給 Debian 維護者"
+
+#. type: frame
+#: packaging-tutorial.tex:161
+msgid ""
+"Many other tools will also be mentioned later, such as \\textbf{debhelper}, "
+"\\textbf{cdbs}, \\textbf{quilt}, \\textbf{pbuilder}, \\textbf{sbuild}, "
+"\\textbf{lintian}, \\textbf{svn-buildpackage}, \\textbf{git-buildpackage}, "
+"\\ldots\\\\ Install them when you need them."
+msgstr ""
+"還有一些接著會提到的工具, 比如說 \\textbf{debhelper}, \\textbf{cdbs}, "
+"\\textbf{quilt}, \\textbf{pbuilder}, \\textbf{sbuild}, \\textbf{lintian}, "
+"\\textbf{svn-buildpackage}, \\textbf{git-buildpackage}, \\ldots\\\\當需要使用"
+"時,可安裝上述套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:168
+msgid "General packaging workflow"
+msgstr "一般打包套件的流程"
+
+#. 	\draw[arr,->] (bin) -- (-1,-6) node[pos=0.5,left] {upload (\textttc{dput})};
+#.  hack hack hack
+#. type: tikzpicture
+#: packaging-tutorial.tex:188
+msgid ""
+"\\node[node1] (www) at (0, 0) {Web}; \\node[node1] (us) at (2.5, 0) "
+"{upstream source}; \\node[node1] (da) at (-2.5, 0) {Debian mirror}; "
+"\\node[node1] (sp) at (0, -2) {source package}; \\draw[arr,<-,dashed,thick] "
+"(sp) -- (2.5,-2) node[right=0cm,text width=2.98cm,text centered,font=\\small"
+"\\sl] {where most of the manual work is done}; \\node[node1] (bin) at (0, "
+"-4) {one or several binary packages}; \\draw[arr,<-,dashed,thick] (bin) -- "
+"(3.5,-4) node[right,text centered,font=\\small\\ttfamily\\sl] {.deb"
+"\\normalfont}; \\draw[arr,->] (us) -- (sp) node[pos=0.5,right,command] {dh"
+"\\_make}; \\draw[arr,->] (da) -- (sp) node[pos=0.5,left,command] {apt-get "
+"source}; \\draw[arr,->] (www) -- (sp) node[pos=0.5,left,command] {dget}; "
+"\\draw[arr,->] (sp) -- (bin) node[pos=0.5,right,text width=6cm] "
+"{\\textttc{debuild} (build and test with \\textttc{lintian}) or "
+"\\textttc{dpkg-buildpackage}}; \\draw[arr,->] (bin) -- (1,-6) node[pos=0.5,"
+"right] {install (\\textttc{debi})}; \\draw[transparent] (bin) -- (-1,-6) "
+"node[pos=0.5,left,opaque] {upload (\\textttc{dput})}; \\draw[arr,->,rounded "
+"corners] (bin) -- (-1,-6) -- (-4.5,-6) -- (-4.5,0) -- (da); "
+"\\useasboundingbox (-4,-6) rectangle (6,0);"
+msgstr ""
+"\\node[node1] (www) at (0, 0) {Web}; \\node[node1] (us) at (2.5, 0) {上游程式"
+"碼}; \\node[node1] (da) at (-2.5, 0) {Debian 鏡像站}; \\node[node1] (sp) at "
+"(0, -2) {原始程式套件}; \\draw[arr,<-,dashed,thick] (sp) -- (2.5,-2) "
+"node[right=0cm,text width=2.98cm,text centered,font=\\small\\sl] {這階段會完"
+"成大部份手動操作}; \\node[node1] (bin) at (0, -4) {一個或多個二進制套件}; "
+"\\draw[arr,<-,dashed,thick] (bin) -- (3.5,-4) node[right,text centered,font="
+"\\small\\ttfamily\\sl] {.deb\\normalfont}; \\draw[arr,->] (us) -- (sp) "
+"node[pos=0.5,right,command] {dh\\_make}; \\draw[arr,->] (da) -- (sp) "
+"node[pos=0.5,left,command] {apt-get source}; \\draw[arr,->] (www) -- (sp) "
+"node[pos=0.5,left,command] {dget}; \\draw[arr,->] (sp) -- (bin) node[pos=0.5,"
+"right,text width=6cm] {\\textttc{debuild} (透過\\textttc{lintian}建立並測試套"
+"件) 或者 \\textttc{dpkg-buildpackage}}; \\draw[arr,->] (bin) -- (1,-6) "
+"node[pos=0.5,right] {安裝(\\textttc{debi})}; \\draw[transparent] (bin) -- "
+"(-1,-6) node[pos=0.5,left,opaque] {上傳(\\textttc{dput})}; \\draw[arr,->,"
+"rounded corners] (bin) -- (-1,-6) -- (-4.5,-6) -- (-4.5,0) -- (da); "
+"\\useasboundingbox (-4,-6) rectangle (6,0);"
+
+#. type: subsection{#2}
+#: packaging-tutorial.tex:205
+msgid "Rebuilding dash"
+msgstr "重包 dash 套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:205
+msgid "Example: rebuilding dash"
+msgstr "範例: 重包 dash 套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:205
+msgid ""
+"Install packages needed to build dash, and devscripts\\\\ {\\texttt{sudo apt-"
+"get build-dep dash}\\\\ (requires \\texttt{deb-src} lines in \\texttt{/etc/"
+"apt/sources.list})}\\\\ {\\texttt{sudo apt-get install -{}-no-install-"
+"recommends devscripts fakeroot}}"
+msgstr ""
+"安裝重包 dash 套件所需的必要套件以及 devscripts 套件\\\\ {\\texttt{sudo apt-"
+"get build-dep dash}\\\\ (需要將\\texttt{deb-src} 設定到 \\texttt{/etc/apt/"
+"sources.list})}\\\\ {\\texttt{sudo apt-get install -{}-no-install-recommends "
+"devscripts fakeroot}}"
+
+#. type: enumerate
+#: packaging-tutorial.tex:205
+msgid ""
+"Create a working directory, and get in it:\\\\ \\texttt{mkdir /tmp/debian-"
+"tutorial ; cd /tmp/debian-tutorial}"
+msgstr ""
+"創建並進入一個工作目錄:\\\\ \\texttt{mkdir /tmp/debian-tutorial ; cd /tmp/"
+"debian-tutorial}"
+
+#. type: enumerate
+#: packaging-tutorial.tex:205
+msgid ""
+"Grab the \\texttt{dash} source package\\\\ \\texttt{apt-get source dash}\\\\ "
+"{\\small (This needs you to have \\texttt{deb-src} lines in your \\texttt{/"
+"etc/apt/sources.list})}"
+msgstr ""
+"把 \\texttt{dash} 原始碼套件下載下來\\\\ \\texttt{apt-get source dash}\\\\ "
+"{\\small (務必確保 \\texttt{deb-src} 已加入 \\texttt{/etc/apt/sources.list})}"
+
+#. type: enumerate
+#: packaging-tutorial.tex:205
+msgid ""
+"Build the package\\\\ {\\texttt{cd dash-*\\\\ debuild -us -uc}} "
+"~~~(\\texttt{-us -uc} disables signing the package with GPG)"
+msgstr ""
+"構建套件\\\\ {\\texttt{cd dash-*\\\\ debuild -us -uc}} ~~~(\\texttt{-us -uc} "
+"代表不使用GPG來簽署套件)"
+
+#. type: enumerate
+#: packaging-tutorial.tex:218
+msgid "Check that it worked"
+msgstr "確認已正常運行"
+
+#. type: itemize
+#: packaging-tutorial.tex:218
+msgid "There are some new \\texttt{.deb} files in the parent directory"
+msgstr "會看到一些新產生的 \\texttt{.deb} 檔案在上一層資料夾中"
+
+#. type: enumerate
+#: packaging-tutorial.tex:218
+msgid "Look at the \\texttt{debian/} directory"
+msgstr "接著看\\texttt{debian/} 目錄"
+
+#. type: itemize
+#: packaging-tutorial.tex:218
+msgid "That's where the packaging work is done"
+msgstr "這是實際打包套件的地方"
+
+#. type: section{#2}
+#: packaging-tutorial.tex:256
+msgid "Creating source packages"
+msgstr "製作原始碼套件"
+
+#. type: subsection{#2}
+#: packaging-tutorial.tex:256
+msgid "Source packages basics"
+msgstr "原始碼套件基礎知識"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:256
+msgid "Source package"
+msgstr "原始碼套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid ""
+"One source package can generate several binary packages\\\\ {\\small e.g. "
+"the \\texttt{\\bfseries libtar} source generates the \\texttt{\\bfseries "
+"libtar0} and \\texttt{\\bfseries libtar-dev} binary packages}"
+msgstr ""
+"一個原始碼套件可產生多個二進制套件\\\\ {\\small 舉例來說 \\texttt{\\bfseries "
+"libtar} 原始碼會產出 \\texttt{\\bfseries libtar0} 跟 \\texttt{\\bfseries "
+"libtar-dev} 二進制套件}"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "Two kinds of packages: (if unsure, use non-native)"
+msgstr "套件分成兩種類型: (若不確定套件種類屬於哪一種, 請使用非原生)"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid ""
+"Native packages: normally for Debian specific software (\\textsl{dpkg}, "
+"\\textsl{apt})"
+msgstr ""
+"原生套件: 通常指的是在 Debian 上固有的特定軟體(\\textsl{dpkg}, \\textsl{apt})"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "Non-native packages: software developed outside Debian"
+msgstr "非原生套件: 在 Debian 以外發展的軟體"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "Main file: \\texttt{.dsc} (meta-data)"
+msgstr "主要檔案: \\texttt{.dsc} (描述資料內容)"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "Other files depending on the version of the source format"
+msgstr "其他檔案則相依於原始碼格式版本"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "1.0 or 3.0 (native): \\texttt{package\\_version.tar.gz}"
+msgstr "1.0 or 3.0 (原生): \\texttt{package\\_version.tar.gz}"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "1.0 (non-native):"
+msgstr "1.0 (非原生):"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "\\texttt{pkg\\_ver.orig.tar.gz}: upstream source"
+msgstr "\\texttt{pkg\\_ver.orig.tar.gz}: 上游原始碼"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "\\texttt{pkg\\_debver.diff.gz}: patch to add Debian-specific changes"
+msgstr "\\texttt{pkg\\_debver.diff.gz}: 針對 Debian 環境而進行客制修改的補丁"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "3.0 (quilt):"
+msgstr "3.0 (quilt):"
+
+#. type: itemize
+#: packaging-tutorial.tex:256
+msgid "\\texttt{pkg\\_debver.debian.tar.gz}: tarball with the Debian changes"
+msgstr ""
+"\\texttt{pkg\\_debver.debian.tar.gz}: 針對 Debian 環境而進行客制修改的 "
+"tarball 檔"
+
+#. type: frame
+#: packaging-tutorial.tex:256
+msgid "(See \\texttt{dpkg-source(1)} for exact details)"
+msgstr "(可參考\\texttt{dpkg-source(1)} 有更詳盡的解說)"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:280
+msgid "Source package example (wget\\_1.12-2.1.dsc)"
+msgstr "原始碼套件範例"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:280
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\small]\n"
+"Format: 3.0 (quilt)\n"
+"Source: wget\n"
+"Binary: wget\n"
+"Architecture: any\n"
+"Version: 1.12-2.1\n"
+"Maintainer: Noel Kothe <noel@debian.org>\n"
+"Homepage: http://www.gnu.org/software/wget/\n"
+"Standards-Version: 3.8.4\n"
+"Build-Depends: debhelper (>> 5.0.0), gettext, texinfo,\n"
+" libssl-dev (>= 0.9.8), dpatch, info2man\n"
+"Checksums-Sha1: \n"
+" 50d4ed2441e67[..]1ee0e94248 2464747 wget_1.12.orig.tar.gz\n"
+" d4c1c8bbe431d[..]dd7cef3611 48308 wget_1.12-2.1.debian.tar.gz\n"
+"Checksums-Sha256: \n"
+" 7578ed0974e12[..]dcba65b572 2464747 wget_1.12.orig.tar.gz\n"
+" 1e9b0c4c00eae[..]89c402ad78 48308 wget_1.12-2.1.debian.tar.gz\n"
+"Files: \n"
+" 141461b9c04e4[..]9d1f2abf83 2464747 wget_1.12.orig.tar.gz\n"
+" e93123c934e3c[..]2f380278c2 48308 wget_1.12-2.1.debian.tar.gz"
+msgstr ""
+"[basicstyle=\\ttfamily\\small]\n"
+"Format: 3.0 (quilt)\n"
+"Source: wget\n"
+"Binary: wget\n"
+"Architecture: any\n"
+"Version: 1.12-2.1\n"
+"Maintainer: Noel Kothe <noel@debian.org>\n"
+"Homepage: http://www.gnu.org/software/wget/\n"
+"Standards-Version: 3.8.4\n"
+"Build-Depends: debhelper (>> 5.0.0), gettext, texinfo,\n"
+" libssl-dev (>= 0.9.8), dpatch, info2man\n"
+"Checksums-Sha1: \n"
+" 50d4ed2441e67[..]1ee0e94248 2464747 wget_1.12.orig.tar.gz\n"
+" d4c1c8bbe431d[..]dd7cef3611 48308 wget_1.12-2.1.debian.tar.gz\n"
+"Checksums-Sha256: \n"
+" 7578ed0974e12[..]dcba65b572 2464747 wget_1.12.orig.tar.gz\n"
+" 1e9b0c4c00eae[..]89c402ad78 48308 wget_1.12-2.1.debian.tar.gz\n"
+"Files: \n"
+" 141461b9c04e4[..]9d1f2abf83 2464747 wget_1.12.orig.tar.gz\n"
+" e93123c934e3c[..]2f380278c2 48308 wget_1.12-2.1.debian.tar.gz"
+
+#. type: subsection{#2}
+#: packaging-tutorial.tex:308
+msgid "Retrieving source packages"
+msgstr "取回原始碼套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:308
+msgid "Retrieving an existing source package"
+msgstr "取回一個既有的原始碼套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "From the Debian archive:"
+msgstr "從 Debian 檔案庫裡面下載"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "\\texttt{apt-get source \\textsl{package}}"
+msgstr "\\texttt{apt-get source \\textsl{package}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "\\texttt{apt-get source \\textsl{package=version}}"
+msgstr "\\texttt{apt-get source \\textsl{package=version}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "\\texttt{apt-get source \\textsl{package/release}}"
+msgstr "\\texttt{apt-get source \\textsl{package/release}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "(You need \\texttt{deb-src} lines in \\texttt{sources.list})"
+msgstr "(需要加入 \\texttt{deb-src} 的設定到 \\texttt{sources.list})"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "From the Internet:"
+msgstr " 透過網路下載"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "\\texttt{dget \\textsl{url-to.dsc}}"
+msgstr "\\texttt{dget \\textsl{url-to.dsc}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid ""
+"\\texttt{dget http://snapshot.debian.org/archive/debian-archive/\\"
+"\\20090802T004153Z/debian/dists/bo/main/source/web/\\\\ wget\\_1.4.4-6.dsc}\\"
+"\\ (\\href{http://snapshot.debian.org/}{\\ttfamily snapshot.d.o} provides "
+"all packages from Debian since 2005)"
+msgstr ""
+"\\texttt{dget http://snapshot.debian.org/archive/debian-archive/\\"
+"\\20090802T004153Z/debian/dists/bo/main/source/web/\\\\ wget\\_1.4.4-6.dsc}\\"
+"\\ (\\href{http://snapshot.debian.org/}{\\ttfamily snapshot.d.o} 提供 自2005"
+"年開始的 Debian套件)"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "From the (declared) version control system:"
+msgstr "透過 Debian 版本控制系統下載"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid "\\texttt{debcheckout \\textsl{package}}"
+msgstr "\\texttt{debcheckout \\textsl{package}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:308
+msgid ""
+"Once downloaded, extract with \\texttt{dpkg-source -x \\textsl{file.dsc}}"
+msgstr "下載後, 使用 \\texttt{dpkg-source -x \\textsl{file.dsc}}解壓縮即可"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:331
+msgid "Creating a basic source package"
+msgstr "創建一個基本原始碼套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid ""
+"Download the upstream source\\\\ (\\textsl{upstream source} = the one from "
+"the software's original developers)"
+msgstr "從上游下載原始碼\\\\ (\\textsl{上游原始碼} = 來自軟體原始開發者)"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid ""
+"Rename to \\texttt{<\\textsl{source\\_package}>\\_<\\textsl{upstream"
+"\\_version}>.orig.tar.gz}\\\\ (example: \\texttt{simgrid\\_3.6.orig.tar.gz})"
+msgstr ""
+"將檔案改名成 \\texttt{<\\textsl{source\\_package}>\\_<\\textsl{upstream"
+"\\_version}>.orig.tar.gz}\\\\ (範例: \\texttt{simgrid\\_3.6.orig.tar.gz})"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid "Untar it"
+msgstr "解開此 tar 檔"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid ""
+"Rename the directory to \\texttt{<\\textsl{source\\_package}>-<"
+"\\textsl{upstream\\_version}>}\\\\ (example: \\texttt{simgrid-3.6})"
+msgstr ""
+"將目錄改名為 \\texttt{<\\textsl{source\\_package}>-<\\textsl{upstream"
+"\\_version}>}\\\\ (範例: \\texttt{simgrid-3.6})"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid ""
+"\\texttt{cd \\texttt{<\\textsl{source\\_package}>-<\\textsl{upstream"
+"\\_version}>} \\&\\& dh\\_make}\\\\ (from the \\textbf{dh-make} package)"
+msgstr ""
+"\\texttt{cd \\texttt{<\\textsl{source\\_package}>-<\\textsl{upstream"
+"\\_version}>} \\&\\& dh\\_make}\\\\ (來自 \\textbf{dh-make} 套件)"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid ""
+"There are some alternatives to \\texttt{dh\\_make} for specific sets of "
+"packages: \\textbf{dh-make-perl}, \\textbf{dh-make-php}, \\ldots"
+msgstr ""
+"對於特定套件, 有除了 \\texttt{dh\\_make} 以外的方法, 舉例為: \\textbf{dh-"
+"make-perl}, \\textbf{dh-make-php}, \\ldots"
+
+#. type: itemize
+#: packaging-tutorial.tex:331
+msgid "\\texttt{debian/} directory created, with a lot of files in it"
+msgstr "已新增\\texttt{debian/} 目錄, 裡面有許多檔案"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:360
+msgid "Files in debian/"
+msgstr "在 debian/ 裡的檔案"
+
+#. type: frame
+#: packaging-tutorial.tex:360
+msgid ""
+"All the packaging work should be made by modifying files in \\texttt{debian/}"
+msgstr "透過修改 \\texttt{debian/} 中的檔案來定義所有打包的動作"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "Main files:"
+msgstr "主要的檔案:"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "\\textbf{control} -- meta-data about the package (dependencies, etc.)"
+msgstr "\\textbf{control} -- 描述套件相關資訊的檔案 (相依性, 等等...)"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "\\textbf{rules} -- specifies how to build the package"
+msgstr "\\textbf{rules} -- 定義如何構建此套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "\\textbf{copyright} -- copyright information for the package"
+msgstr "\\textbf{copyright} -- 關於此套件的版權宣告"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "\\textbf{changelog} -- history of the Debian package"
+msgstr "\\textbf{changelog} --有關此 Debian 套件的修改歷程"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "Other files:"
+msgstr "其他檔案:"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "compat"
+msgstr "compat"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "watch"
+msgstr "watch"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "dh\\_install* targets\\\\ {\\small *.dirs, *.docs, *.manpages, \\ldots}"
+msgstr ""
+"dh\\_install* targets\\\\ {\\small *.dirs, *.docs, *.manpages, \\ldots}"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "maintainer scripts\\\\ {\\small *.postinst, *.prerm, \\ldots}"
+msgstr "維護者所使用的腳本\\\\ {\\small *.postinst, *.prerm, \\ldots}"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "source/format"
+msgstr "source/format"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "patches/ -- if you need to modify the upstream sources"
+msgstr "patches/ -- 如果你需要修改上游原始碼"
+
+#. type: itemize
+#: packaging-tutorial.tex:360
+msgid "Several files use a format based on RFC 822 (mail headers)"
+msgstr "許多檔案的格式都是基於 RFC 822 (信的表頭)"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:372
+msgid "debian/changelog"
+msgstr "debian/changelog"
+
+#. type: itemize
+#: packaging-tutorial.tex:372
+msgid "Lists the Debian packaging changes"
+msgstr "列出 Debian 套件的修改歷程"
+
+#. type: itemize
+#: packaging-tutorial.tex:372
+msgid "Gives the current version of the package"
+msgstr "訂定現在的套件版本"
+
+#. type: tikzpicture
+#: packaging-tutorial.tex:372
+msgid ""
+"\\draw (0,0) node[above right] {\\large 1.2.1.1-5}; \\draw [decorate,"
+"decoration={brace}] (2,0) -- (1.45,0) node[at start,below,text width=1.6cm,"
+"text centered] {\\small Debian revision}; \\draw [decorate,"
+"decoration={brace}] (1.4,0) -- (0,0) node[midway,below,text width=1.6cm,text "
+"centered] { \\small Upstream version};"
+msgstr ""
+"\\draw (0,0) node[above right] {\\large 1.2.1.1-5}; \\draw [decorate,"
+"decoration={brace}] (2,0) -- (1.45,0) node[at start,below,text width=1.6cm,"
+"text centered] {\\small Debian 修訂版}; \\draw [decorate,decoration={brace}] "
+"(1.4,0) -- (0,0) node[midway,below,text width=1.6cm,text centered] { \\small "
+"上游版本};"
+
+#. %
+#. type: itemize
+#: packaging-tutorial.tex:386
+msgid "Edited manually or with \\textttc{dch}"
+msgstr "可以手動編輯或者透過 \\textttc{dch}"
+
+#. type: itemize
+#: packaging-tutorial.tex:386
+msgid "Create a changelog entry for a new release: \\textttc{dch -i}"
+msgstr "為一個新的發行版創建一條歷程記錄\\textttc{dch -i}"
+
+#. type: itemize
+#: packaging-tutorial.tex:386
+msgid ""
+"Special format to automatically close Debian or Ubuntu bugs\\\\ Debian: "
+"\\texttt{Closes:~\\#595268}; Ubuntu: \\texttt{LP:~\\#616929}"
+msgstr ""
+"具備特殊格式並自動將 Debian 或 Ubuntu 的缺陷結案\\\\ Debian: \\texttt{Closes:"
+"~\\#595268}; Ubuntu: \\texttt{LP:~\\#616929}"
+
+#. type: itemize
+#: packaging-tutorial.tex:386
+msgid ""
+"Installed as \\texttt{/usr/share/doc/\\textit{package}/changelog.Debian.gz}"
+msgstr "安裝在 \\texttt{/usr/share/doc/\\textit{package}/changelog.Debian.gz}"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:386
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"mpich2 (1.2.1.1-5) unstable; urgency=low\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"mpich2 (1.2.1.1-5) unstable; urgency=low\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:392
+#, no-wrap
+msgid ""
+"  * Use /usr/bin/python instead of /usr/bin/python2.5. Allow\n"
+"    to drop dependency on python2.5.  Closes: #595268\n"
+"  * Make /usr/bin/mpdroot setuid. This is the default after\n"
+"    the installation of mpich2 from source, too. LP: #616929\n"
+"    + Add corresponding lintian override.\n"
+"\n"
+msgstr ""
+"  * Use /usr/bin/python instead of /usr/bin/python2.5. Allow\n"
+"    to drop dependency on python2.5.  Closes: #595268\n"
+"  * Make /usr/bin/mpdroot setuid. This is the default after\n"
+"    the installation of mpich2 from source, too. LP: #616929\n"
+"    + Add corresponding lintian override.\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:394
+#, no-wrap
+msgid " -- Lucas Nussbaum <lucas@debian.org>  Wed, 15 Sep 2010 18:13:44 +0200"
+msgstr " -- Lucas Nussbaum <lucas@debian.org>  Wed, 15 Sep 2010 18:13:44 +0200"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:421
+msgid "debian/control"
+msgstr "debian/control"
+
+#. type: itemize
+#: packaging-tutorial.tex:421
+msgid "Package metadata"
+msgstr "描述套件相關資訊的檔案"
+
+#. type: itemize
+#: packaging-tutorial.tex:421
+msgid "For the source package itself"
+msgstr "對於原始碼套件本身"
+
+#. type: itemize
+#: packaging-tutorial.tex:421
+msgid "For each binary package built from this source"
+msgstr "對於每個從原始碼套件建置而成的二進制套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:421
+msgid ""
+"Package name, section, priority, maintainer, uploaders, build-dependencies, "
+"dependencies, description, homepage, \\ldots"
+msgstr ""
+"套件名稱, 種類, 優先度, 維護者, 上傳者, 建置相依性, 相依性, 相關描述, 網頁"
+
+#. type: itemize
+#: packaging-tutorial.tex:421
+msgid ""
+"Documentation: Debian Policy chapter 5\\\\ \\url{http://www.debian.org/doc/"
+"debian-policy/ch-controlfields}"
+msgstr ""
+"相關文件: Debian Policy 第 5 章\\\\ \\url{http://www.debian.org/doc/debian-"
+"policy/ch-controlfields}"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:421
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"Source: wget\n"
+"Section: web\n"
+"Priority: important\n"
+"Maintainer: Noel Kothe <noel@debian.org>\n"
+"Build-Depends: debhelper (>> 5.0.0), gettext, texinfo,\n"
+" libssl-dev (>= 0.9.8), dpatch, info2man\n"
+"Standards-Version: 3.8.4\n"
+"Homepage: http://www.gnu.org/software/wget/\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"Source: wget\n"
+"Section: web\n"
+"Priority: important\n"
+"Maintainer: Noel Kothe <noel@debian.org>\n"
+"Build-Depends: debhelper (>> 5.0.0), gettext, texinfo,\n"
+" libssl-dev (>= 0.9.8), dpatch, info2man\n"
+"Standards-Version: 3.8.4\n"
+"Homepage: http://www.gnu.org/software/wget/\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:427
+#, no-wrap
+msgid ""
+"Package: wget\n"
+"Architecture: any\n"
+"Depends: ${shlibs:Depends}, ${misc:Depends}\n"
+"Description: retrieves files from the web\n"
+" Wget is a network utility to retrieve files from the Web"
+msgstr ""
+"Package: wget\n"
+"Architecture: any\n"
+"Depends: ${shlibs:Depends}, ${misc:Depends}\n"
+"Description: retrieves files from the web\n"
+" Wget is a network utility to retrieve files from the Web"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:456
+msgid "Architecture: all or any"
+msgstr "Architecture: all or any"
+
+#. type: frame
+#: packaging-tutorial.tex:456
+msgid "Two kinds of binary packages:"
+msgstr "有兩種二進制套件:"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "Packages with different contents on each Debian architecture"
+msgstr "套件內容會隨著不同的 Debian 平台架構而有所差異"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "Example: C program"
+msgstr "範例: C 程式"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "\\texttt{Architecture:\\ any} in \\texttt{debian/control}"
+msgstr "\\texttt{debian/control} 中描述 \\texttt{Architecture:\\ any}  "
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid ""
+"Or, if it only works on a subset of architectures:\\\\ \\texttt{Architecture:"
+"\\ amd64 i386 ia64 hurd-i386}"
+msgstr ""
+"或者只運行在某些特定的平台架構中:\\\\ \\texttt{Architecture:\\ amd64 i386 "
+"ia64 hurd-i386}"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "buildd.debian.org: builds all the other architectures for you on upload"
+msgstr "buildd.debian.org: 上傳後會自動構建其他架構的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid ""
+"Named \\texttt{\\textsl{package}\\_\\textsl{version}\\_"
+"\\textsl{architecture}.deb}"
+msgstr ""
+"命名為\\texttt{\\textsl{package}\\_\\textsl{version}\\_"
+"\\textsl{architecture}.deb}"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "Packages with the same content on all architectures"
+msgstr "套件內容在不同的 Debian 平台架構上皆相同"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "Example: Perl library"
+msgstr "範例: Perl 函式庫"
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid "\\texttt{Architecture:\\ all} in \\texttt{debian/control}"
+msgstr "\\texttt{debian/control} 中描述 \\texttt{Architecture:\\ all}  "
+
+#. type: itemize
+#: packaging-tutorial.tex:456
+msgid ""
+"Named \\texttt{\\textsl{package}\\_\\textsl{version}\\_\\textbf{all}.deb}"
+msgstr ""
+"命名為\\texttt{\\textsl{package}\\_\\textsl{version}\\_\\textbf{all}.deb}"
+
+#. type: frame
+#: packaging-tutorial.tex:456
+msgid ""
+"A source package can generate a mix of \\texttt{Architecture:\\ any} and "
+"\\texttt{Architecture:\\ all} binary packages"
+msgstr ""
+"一個原始碼套件可以產生多個平台架構 \\texttt{Architecture:\\ any} 以及 "
+"\\texttt{Architecture:\\ all} 二進制套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:482
+msgid "debian/rules"
+msgstr "debian/rules"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid "Makefile"
+msgstr "Makefile"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid "Interface used to build Debian packages"
+msgstr "構建 Debian 套件的介面"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid ""
+"Documented in Debian Policy, chapter 4.8\\\\ {\\small \\url{http://www."
+"debian.org/doc/debian-policy/ch-source\\#s-debianrules}}"
+msgstr ""
+"詳細文件在 Debian Policy, 章節 4.8中\\\\ {\\small \\url{http://www.debian."
+"org/doc/debian-policy/ch-source\\#s-debianrules}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid "Required targets:"
+msgstr "必要的 targets:"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid ""
+"\\texttt{build, build-arch, build-indep}: should perform all the "
+"configuration and compilation"
+msgstr "\\texttt{build, build-arch, build-indep}: 必須執行所有設定並進行編譯"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid "\\texttt{binary, binary-arch, binary-indep}: build the binary packages"
+msgstr "\\texttt{binary, binary-arch, binary-indep}: 構建二進制套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid ""
+"\\texttt{dpkg-buildpackage} will call \\texttt{binary} to build all the "
+"packages, or \\texttt{binary-arch} to build only the \\texttt{Architecture:"
+"~any} packages"
+msgstr ""
+"\\texttt{dpkg-buildpackage} 會呼叫 \\texttt{binary} 構建所有套件, 或者呼叫 "
+"\\texttt{binary-arch} 構建特定 \\texttt{Architecture:~any} 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:482
+msgid "\\texttt{clean}: clean up the source directory"
+msgstr "\\texttt{clean}: 清理原始碼目錄"
+
+#. type: subsection{#2}
+#: packaging-tutorial.tex:516
+msgid "Packaging helpers"
+msgstr "協助打包的幫手"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:516
+msgid "Packaging helpers -- debhelper"
+msgstr "協助打包的幫手 -- debhelper"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "You could write shell code in \\texttt{debian/rules} directly"
+msgstr "可以直接在 \\texttt{debian/rules} 中撰寫 shell code"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "See the \\texttt{adduser} package for example"
+msgstr "範例可參考 \\texttt{adduser} 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid ""
+"Better practice (used by most packages): use a \\textsl{Packaging helper}"
+msgstr "然而更好的作法 (被大部份套件所採用): 使用 \\textsl{打包幫手}"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "Most popular one: \\textbf{debhelper} (used by 98\\% of packages)"
+msgstr "最常見的方法: \\textbf{debhelper} (大約被 98\\% 的套件所採用)"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "Goals:"
+msgstr "目標:"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "Factor the common tasks in standard tools used by all packages"
+msgstr "將常使用的任務拆解, 並轉化為標準工具, 最後適用於所有套件上"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "Fix some packaging bugs once for all packages"
+msgstr "當修正打包錯誤時, 可以適用於所有的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid ""
+"{\\footnotesize dh\\_installdirs, dh\\_installchangelogs, dh\\_installdocs, "
+"dh\\_installexamples, dh\\_install, dh\\_installdebconf, dh\\_installinit, dh"
+"\\_link, dh\\_strip, dh\\_compress, dh\\_fixperms, dh\\_perl, dh"
+"\\_makeshlibs, dh\\_installdeb, dh\\_shlibdeps, dh\\_gencontrol, dh"
+"\\_md5sums, dh\\_builddeb, \\ldots}"
+msgstr ""
+"{\\footnotesize dh\\_installdirs, dh\\_installchangelogs, dh\\_installdocs, "
+"dh\\_installexamples, dh\\_install, dh\\_installdebconf, dh\\_installinit, dh"
+"\\_link, dh\\_strip, dh\\_compress, dh\\_fixperms, dh\\_perl, dh"
+"\\_makeshlibs, dh\\_installdeb, dh\\_shlibdeps, dh\\_gencontrol, dh"
+"\\_md5sums, dh\\_builddeb, \\ldots}"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "Called from \\texttt{debian/rules}"
+msgstr "由 \\texttt{debian/rules} 所呼叫"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid "Configurable using command parameters or files in \\texttt{debian/}"
+msgstr "透過 \\texttt{debian/}中的指令參數或檔案來進行配置的動作"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid ""
+"{\\footnotesize \\ttfamily \\textsl{package}.docs, \\textsl{package}."
+"examples, \\textsl{package}.install, \\textsl{package}.manpages, \\ldots}"
+msgstr ""
+"{\\footnotesize \\ttfamily \\textsl{package}.docs, \\textsl{package}."
+"examples, \\textsl{package}.install, \\textsl{package}.manpages, \\ldots}"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid ""
+"Third-party helpers for sets of packages: \\textbf{python-support}, "
+"\\textbf{dh\\_ocaml}, \\ldots"
+msgstr ""
+"有第三方小幫手可以協助打包套件: \\textbf{python-support}, \\textbf{dh"
+"\\_ocaml}, \\ldots"
+
+#. type: itemize
+#: packaging-tutorial.tex:516
+msgid ""
+"Gotcha: \\texttt{debian/compat}: Debhelper compatibility version (use \"7\")"
+msgstr "Gotcha: \\texttt{debian/compat}: Debhelper 相容性版本 (use \"7\")"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:520
+msgid "debian/rules using debhelper (1/2)"
+msgstr "debian/rules 使用 debhelper (1/2)"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:520
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize,escapeinside=\\{\\}]\n"
+"#!/usr/bin/make -f\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize,escapeinside=\\{\\}]\n"
+"#!/usr/bin/make -f\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:523
+#, no-wrap
+msgid ""
+"# Uncomment this to turn on verbose mode.\n"
+"#export DH_VERBOSE=1\n"
+"\n"
+msgstr ""
+"# Uncomment this to turn on verbose mode.\n"
+"#export DH_VERBOSE=1\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:527
+#, no-wrap
+msgid ""
+"build: \n"
+"        $(MAKE)\n"
+"        #docbook-to-man debian/packagename.sgml > packagename.1\n"
+"\n"
+msgstr ""
+"build: \n"
+"        $(MAKE)\n"
+"        #docbook-to-man debian/packagename.sgml > packagename.1\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:534
+#, no-wrap
+msgid ""
+"clean: \n"
+"        dh_testdir\n"
+"        dh_testroot\n"
+"        rm -f build-stamp configure-stamp\n"
+"        $(MAKE) clean\n"
+"        dh_clean \n"
+"\n"
+msgstr ""
+"clean: \n"
+"        dh_testdir\n"
+"        dh_testroot\n"
+"        rm -f build-stamp configure-stamp\n"
+"        $(MAKE) clean\n"
+"        dh_clean \n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:542
+#, no-wrap
+msgid ""
+"install: build\n"
+"        dh_testdir\n"
+"        dh_testroot\n"
+"        dh_clean -k \n"
+"        dh_installdirs\n"
+"        # Add here commands to install the package into debian/packagename.\n"
+"        $(MAKE) DESTDIR=$(CURDIR)/debian/packagename install"
+msgstr ""
+"install: build\n"
+"        dh_testdir\n"
+"        dh_testroot\n"
+"        dh_clean -k \n"
+"        dh_installdirs\n"
+"        # Add here commands to install the package into debian/packagename.\n"
+"        $(MAKE) DESTDIR=$(CURDIR)/debian/packagename install"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:547
+msgid "debian/rules using debhelper (2/2)"
+msgstr "debian/rules using debhelper (2/2)"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:547
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize,escapeinside=\\{\\}]\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize,escapeinside=\\{\\}]\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:550
+#, no-wrap
+msgid ""
+"# Build architecture-independent files here.\n"
+"binary-indep: build install\n"
+"\n"
+msgstr ""
+"# Build architecture-independent files here.\n"
+"binary-indep: build install\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:569
+#, no-wrap
+msgid ""
+"# Build architecture-dependent files here.\n"
+"binary-arch: build install\n"
+"        dh_testdir\n"
+"        dh_testroot\n"
+"        dh_installchangelogs \n"
+"        dh_installdocs\n"
+"        dh_installexamples\n"
+"        dh_install\n"
+"        dh_installman\n"
+"        dh_link\n"
+"        dh_strip\n"
+"        dh_compress\n"
+"        dh_fixperms\n"
+"        dh_installdeb\n"
+"        dh_shlibdeps\n"
+"        dh_gencontrol\n"
+"        dh_md5sums\n"
+"        dh_builddeb\n"
+"\n"
+msgstr ""
+"# Build architecture-dependent files here.\n"
+"binary-arch: build install\n"
+"        dh_testdir\n"
+"        dh_testroot\n"
+"        dh_installchangelogs \n"
+"        dh_installdocs\n"
+"        dh_installexamples\n"
+"        dh_install\n"
+"        dh_installman\n"
+"        dh_link\n"
+"        dh_strip\n"
+"        dh_compress\n"
+"        dh_fixperms\n"
+"        dh_installdeb\n"
+"        dh_shlibdeps\n"
+"        dh_gencontrol\n"
+"        dh_md5sums\n"
+"        dh_builddeb\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:572
+#, no-wrap
+msgid ""
+"binary: binary-indep binary-arch\n"
+".PHONY: build clean binary-indep binary-arch binary install configure"
+msgstr ""
+"binary: binary-indep binary-arch\n"
+".PHONY: build clean binary-indep binary-arch binary install configure"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:603
+msgid "CDBS"
+msgstr "CDBS"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "With debhelper, still a lot of redundancy between packages"
+msgstr "即使在套件裡使用 debhelper, 還是會有冗餘的事情要處理"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "Second-level helpers that factor common functionality"
+msgstr "第二層的小幫手能夠拆解共同的功能"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid ""
+"E.g. building with \\texttt{./configure \\&\\& make \\&\\& make install} or "
+"CMake"
+msgstr ""
+"舉例: 使用 \\texttt{./configure \\&\\& make \\&\\& make install} 或者 CMake "
+"進行建構"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "CDBS:"
+msgstr "CDBS:"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "Introduced in 2005, based on advanced \\textsl{GNU make} magic"
+msgstr "源自 2005, 基於 advanced \\textsl{GNU make} magic"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "Documentation: \\texttt{/usr/share/doc/cdbs/}"
+msgstr "文件: \\texttt{/usr/share/doc/cdbs/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "Support for Perl, Python, Ruby, GNOME, KDE, Java, Haskell, \\ldots"
+msgstr "可支援 Perl, Python, Ruby, GNOME, KDE, Java, Haskell, \\ldots"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "But some people hate it:"
+msgstr "但有些使用者不喜歡使用"
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid ""
+"Sometimes difficult to customize package builds:\\\\ \"\\textsl{twisty maze "
+"of makefiles and environment variables}\""
+msgstr "有時難以產生客製化套件:\\\\ \"\\textsl{makefile以及環境參數相當複雜}\""
+
+#. type: itemize
+#: packaging-tutorial.tex:603
+msgid "Slower than plain debhelper (many useless calls to \\texttt{dh\\_*})"
+msgstr "比明文的 debhelper還慢 (會有許多不必要 \\texttt{dh\\_*}相關的呼叫)"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:603
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize,escapeinside=\\{\\}]\n"
+"#!/usr/bin/make -f\n"
+"include /usr/share/cdbs/1/rules/debhelper.mk\n"
+"include /usr/share/cdbs/1/class/autotools.mk\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize,escapeinside=\\{\\}]\n"
+"#!/usr/bin/make -f\n"
+"include /usr/share/cdbs/1/rules/debhelper.mk\n"
+"include /usr/share/cdbs/1/class/autotools.mk\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:607
+#, no-wrap
+msgid ""
+"# add an action after the build\n"
+"build/mypackage::\n"
+"    /bin/bash debian/scripts/foo.sh\n"
+"      "
+msgstr ""
+"# add an action after the build\n"
+"build/mypackage::\n"
+"    /bin/bash debian/scripts/foo.sh\n"
+"      "
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:628
+msgid "Dh (aka Debhelper 7, or dh7)"
+msgstr "Dh (又名 Debhelper 7, 或者 dh7)"
+
+#. type: itemize
+#: packaging-tutorial.tex:628
+msgid "Introduced in 2008 as a \\textsl{CDBS killer}"
+msgstr "源自2008年, 預期 \\textsl{取代CDBS }"
+
+#. type: itemize
+#: packaging-tutorial.tex:628
+msgid "\\textbf{dh} command that calls \\texttt{dh\\_*}"
+msgstr "\\textbf{dh} 指令呼叫 \\texttt{dh\\_*}"
+
+#. type: itemize
+#: packaging-tutorial.tex:628
+msgid "Simple \\textsl{debian/rules}, listing only overrides"
+msgstr "簡易化 \\textsl{debian/rules}, 只列出需覆蓋的地方"
+
+#. type: itemize
+#: packaging-tutorial.tex:628
+msgid "Easier to customize than CDBS"
+msgstr "比 CDBS 更容易進行客製化"
+
+#. type: itemize
+#: packaging-tutorial.tex:628
+msgid ""
+"Doc: manpages (\\texttt{debhelper(7)}, \\texttt{dh(1)}) + slides from "
+"DebConf9 talk\\\\ \\url{http://kitenet.net/~joey/talks/debhelper/debhelper-"
+"slides.pdf}"
+msgstr ""
+"文件: manpages (\\texttt{debhelper(7)}, \\texttt{dh(1)}) + DebConf9 的簡報投"
+"影片\\\\ \\url{http://kitenet.net/~joey/talks/debhelper/debhelper-slides.pdf}"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:628
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"#!/usr/bin/make -f\n"
+"%:\n"
+"    dh $@\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"#!/usr/bin/make -f\n"
+"%:\n"
+"    dh $@\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:631
+#, no-wrap
+msgid ""
+"override_dh_auto_configure:\n"
+"     dh_auto_configure -- --with-kitchen-sink\n"
+"\n"
+msgstr ""
+"override_dh_auto_configure:\n"
+"     dh_auto_configure -- --with-kitchen-sink\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:634
+#, no-wrap
+msgid ""
+"override_dh_auto_build:\n"
+"     make world\n"
+"\n"
+msgstr ""
+"override_dh_auto_build:\n"
+"     make world\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:635
+#, no-wrap
+msgid "    "
+msgstr "    "
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:656
+msgid "Classic debhelper vs CDBS vs dh"
+msgstr "Classic debhelper vs CDBS vs dh"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid ""
+"Mind shares:\\\\ Classic debhelper: 27\\% \\hskip 1em CDBS: 18\\% \\hskip "
+"1em dh: 54\\%"
+msgstr ""
+"心佔率:\\\\ Classic debhelper: 27\\% \\hskip 1em CDBS: 18\\% \\hskip 1em dh: "
+"54\\%"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid "Which one should I learn?"
+msgstr "究竟該採用哪一種方法呢?"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid "Probably a bit of all of them"
+msgstr "或許每一種都需要瞭解"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid "You need to know debhelper to use dh and CDBS"
+msgstr "必須瞭解 debhelper 以使用 dh 以及 CDBS"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid "You might have to modify CDBS packages"
+msgstr "你也許需要修改 CDBS 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid "Which one should I use for a new package?"
+msgstr "對於新套件, 該使用哪一種方法呢?"
+
+#. type: itemize
+#: packaging-tutorial.tex:656
+msgid "\\textbf{dh} (only solution with an increasing mind share)"
+msgstr "\\textbf{dh} (只有它的心佔率是呈現上升)"
+
+#. type: axis[#1]
+#: packaging-tutorial.tex:670
+msgid ""
+"small,label style={font=\\footnotesize},xlabel={\\small Time},"
+"ylabel={\\small Market share (\\%)}, date coordinates in=x,height=4.85cm,"
+"width=9cm,xticklabel={\\month/\\year}, legend style={font=\\footnotesize,"
+"at={(1.02,1)},anchor=north west},max space between ticks=82,try min ticks=5,"
+"ymin=0"
+msgstr ""
+"small,label style={font=\\footnotesize},xlabel={\\small 時間},"
+"ylabel={\\small 市佔率 (\\%)}, date coordinates in=x,height=4.85cm,width=9cm,"
+"xticklabel={\\month/\\year}, legend style={font=\\footnotesize,at={(1.02,1)},"
+"anchor=north west},max space between ticks=82,try min ticks=5,ymin=0"
+
+#. type: axis
+#: packaging-tutorial.tex:670
+msgid ""
+"\\addplot[mark=none,blue,thick,style=densely dotted] table[x=date,y=dh] "
+"{cdbs-dh7.txt}; \\addplot[mark=none,red,thick,style=dashed] table[x=date,"
+"y=dh7] {cdbs-dh7.txt}; \\addplot[mark=none,green,thick] table[x=date,y=cdbs] "
+"{cdbs-dh7.txt}; \\legend{debhelper, dh, CDBS}"
+msgstr ""
+"\\addplot[mark=none,blue,thick,style=densely dotted] table[x=date,y=dh] "
+"{cdbs-dh7.txt}; \\addplot[mark=none,red,thick,style=dashed] table[x=date,"
+"y=dh7] {cdbs-dh7.txt}; \\addplot[mark=none,green,thick] table[x=date,y=cdbs] "
+"{cdbs-dh7.txt}; \\legend{debhelper, dh, CDBS}"
+
+#. type: section{#2}
+#: packaging-tutorial.tex:680
+msgid "Building and testing packages"
+msgstr "構建並測試套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:680
+msgid "Building packages"
+msgstr "構建套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:680
+msgid ""
+"\\textttc{apt-get build-dep mypackage}\\\\ Installs the \\textsl{build-"
+"dependencies} (for a package already in Debian)\\\\ Or \\textttc{mk-build-"
+"deps -ir} (for a package not uploaded yet)"
+msgstr ""
+"\\textttc{apt-get build-dep mypackage}\\\\ 安裝 \\textsl{build-dependencies} "
+"(適用於套件已在 Debian 中)\\\\ 或者 \\textttc{mk-build-deps -ir} (適用於套件"
+"尚未上傳到 Debian 中)"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid "\\textttc{debuild}: build, test with \\texttt{lintian}, sign with GPG"
+msgstr ""
+"\\textttc{debuild}: 透過 \\texttt{lintian} 進行構建, 測試, 並使用 GPG 進行簽"
+"署"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid "Also possible to call \\textttc{dpkg-buildpackage} directly"
+msgstr "又或者可以直接呼叫 \\textttc{dpkg-buildpackage} "
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid "Usually with \\texttt{dpkg-buildpackage -us -uc}"
+msgstr "通常使用 \\texttt{dpkg-buildpackage -us -uc}"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid "It is better to build packages in a clean \\& minimal environment"
+msgstr "在小型且乾淨環境中構建套件較為適合"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"\\textttc{pbuilder} -- helper to build packages in a \\textsl{chroot}\\\\ "
+"Good documentation: \\url{https://wiki.ubuntu.com/PbuilderHowto}\\\\ "
+"(optimization: \\textttc{cowbuilder} \\textttc{ccache} \\textttc{distcc})"
+msgstr ""
+"\\textttc{pbuilder} -- 使用 \\textsl{chroot}來協助構建套件好的文件: "
+"\\url{https://wiki.ubuntu.com/PbuilderHowto}\\\\ (最佳化: "
+"\\textttc{cowbuilder} \\textttc{ccache} \\textttc{distcc})"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"\\textttc{schroot} and \\textttc{sbuild}: used on the Debian build daemons\\"
+"\\ (not as simple as \\texttt{pbuilder}, but allows LVM snapshots\\\\ see: "
+"\\url{https://help.ubuntu.com/community/SbuildLVMHowto} )"
+msgstr ""
+"\\textttc{schroot} 和 \\textttc{sbuild}: 被 Debian build daemons 所使用\\\\ "
+"(不若 \\texttt{pbuilder} 簡單, 但能使用 LVM 快照功能\\\\ 參照: \\url{https://"
+"help.ubuntu.com/community/SbuildLVMHowto} )"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid "Generates \\texttt{.deb} files and a \\texttt{.changes} file"
+msgstr "產生 \\texttt{.deb} 檔案以及 \\texttt{.changes} 檔案"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"\\texttt{.changes}: describes what was built; used to upload the package"
+msgstr "\\texttt{.changes}: 描述構建哪些東西; 用來上傳套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:737
+msgid "Installing and testing packages"
+msgstr "安裝以及測試套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"Install the package locally: \\textttc{debi} (will use \\texttt{.changes} to "
+"know what to install)"
+msgstr ""
+"本地安裝套件: \\textttc{debi} (使用\\texttt{.changes} 來得知需安裝哪些)"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"List the content of the package: \\texttt{{\\color{rouge}debc} ../"
+"mypackage<TAB>.changes}"
+msgstr ""
+"列出套件的內容: \\texttt{{\\color{rouge}debc} ../mypackage<TAB>.changes}"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"Compare the package with a previous version:\\\\ \\texttt{{\\color{rouge}"
+"debdiff} ../mypackage\\_1\\_*.changes ../mypackage\\_2\\_*.changes}\\\\ or "
+"to compare the sources:\\\\ \\texttt{{\\color{rouge}debdiff} ../mypackage"
+"\\_1\\_*.dsc ../mypackage\\_2\\_*.dsc}\\\\"
+msgstr ""
+"和前一版的套件比較:\\\\ \\texttt{{\\color{rouge}debdiff} ../mypackage"
+"\\_1\\_*.changes ../mypackage\\_2\\_*.changes}\\\\ 或比較原始碼差異:\\\\ "
+"\\texttt{{\\color{rouge}debdiff} ../mypackage\\_1\\_*.dsc ../mypackage"
+"\\_2\\_*.dsc}\\\\"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"Check the package with \\texttt{lintian} (static analyzer):\\\\ "
+"\\texttt{{\\color{rouge}lintian} ../mypackage<TAB>.changes}\\\\ "
+"\\texttt{lintian -i}: gives more information about the errors \\\\ "
+"\\texttt{lintian -EviIL +pedantic}: shows more problems"
+msgstr ""
+"透過 \\texttt{lintian} (靜態分析工具): 來確認套件\\\\ "
+"\\texttt{{\\color{rouge}lintian} ../mypackage<TAB>.changes}\\\\ "
+"\\texttt{lintian -i}: 提示更多錯誤訊息 \\\\ \\texttt{lintian -EviIL "
+"+pedantic}: 顯示更多問題"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid "Upload the package to Debian (\\textttc{dput}) (needs configuration)"
+msgstr "上傳套件到 Debian (\\textttc{dput}) (需要設定)"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"Manage a private Debian archive with \\textttc{reprepro}\\\\ Documentation: "
+"\\url{http://mirrorer.alioth.debian.org/}"
+msgstr ""
+"可透過 \\textttc{reprepro}的指令管理私有Debian 檔案庫\\\\ 文件: \\url{http://"
+"mirrorer.alioth.debian.org/}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:737 packaging-tutorial.tex:1473
+#: packaging-tutorial.tex:1479
+msgid "Practical session 1: modifying the grep package"
+msgstr "實際演練 1: 修改 grep 套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:737 packaging-tutorial.tex:1479
+msgid ""
+"Go to \\url{http://ftp.debian.org/debian/pool/main/g/grep/} and download "
+"version 2.6.3-3 of the package (if you use Ubuntu 11.10 or later, or Debian "
+"testing or unstable, use version 2.9-1 or 2.9-2 instead)"
+msgstr ""
+"前往 \\url{http://ftp.debian.org/debian/pool/main/g/grep/} 下載版本 2.6.3-3的"
+"套件(若你使用 Ubuntu 11.10 以上的版本, Debian testing 或者 unstable, 請下載套"
+"件版本 2.9-1 or 2.9-2)"
+
+#. type: itemize
+#: packaging-tutorial.tex:737
+msgid ""
+"If the source package is not unpacked automatically, unpack it with "
+"\\texttt{dpkg-source~-x~grep\\_*.dsc}"
+msgstr ""
+"如果原始碼套件沒有自動解開, 請使用下列指令 \\texttt{dpkg-source~-x~grep\\_*."
+"dsc}"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1547
+msgid "Look at the files in \\texttt{debian/}."
+msgstr "注意 \\texttt{debian/}中的檔案"
+
+#. type: itemize
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1547
+msgid "How many binary packages are generated by this source package?"
+msgstr "原始碼套件產生多少二進制套件?"
+
+#. type: itemize
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1547
+msgid "Which packaging helper does this package use?"
+msgstr "這個套件使用哪一種打包小幫手?"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1556
+msgid "Build the package"
+msgstr "構建套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1577
+msgid ""
+"We are now going to modify the package. Add a changelog entry and increase "
+"the version number."
+msgstr "先修改套件. 並在changelog中添加一個條目並且遞增版本號碼."
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1597
+msgid "Now disable perl-regexp support (it is a \\texttt{./configure} option)"
+msgstr "接著將 perl-regexp 功能移除 (位於 \\texttt{./configure} 中的選項)"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1597
+msgid "Rebuild the package"
+msgstr "重新構建套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1627
+msgid "Compare the original and the new package with debdiff"
+msgstr "使用 debdiff 來比較原始和新套件中差異"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1627
+msgid "Install the newly built package"
+msgstr "安裝新構建的套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:759 packaging-tutorial.tex:1501
+#: packaging-tutorial.tex:1627
+msgid "Cry if you messed up ;)"
+msgstr "如果失敗請哭哭 ;)"
+
+#. type: section{#2}
+#: packaging-tutorial.tex:775
+msgid "Advanced packaging topics"
+msgstr "進階打包主題"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:775
+msgid "debian/copyright"
+msgstr "debian/copyright"
+
+#. type: itemize
+#: packaging-tutorial.tex:775
+msgid "Copyright and license information for the source and the packaging"
+msgstr "原始碼以及打包的著作權和授權條款資訊"
+
+#. type: itemize
+#: packaging-tutorial.tex:775
+msgid "Traditionally written as a text file"
+msgstr "一般都是以 text 檔案格式編寫"
+
+#. type: itemize
+#: packaging-tutorial.tex:775
+msgid ""
+"New machine-readable format: {\\small\\url{http://www.debian.org/doc/"
+"packaging-manuals/copyright-format/1.0/}}"
+msgstr ""
+"新的機器可讀格式 {\\small\\url{http://www.debian.org/doc/packaging-manuals/"
+"copyright-format/1.0/}}"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:775
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\scriptsize]\n"
+"Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
+"Upstream-Name: X Solitaire\n"
+"Source: ftp://ftp.example.com/pub/games\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\scriptsize]\n"
+"Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
+"Upstream-Name: X Solitaire\n"
+"Source: ftp://ftp.example.com/pub/games\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:785
+#, no-wrap
+msgid ""
+"Files: *\n"
+"Copyright: Copyright 1998 John Doe <jdoe@example.com>\n"
+"License: GPL-2+\n"
+" This program is free software; you can redistribute it\n"
+" [...]\n"
+" .\n"
+" On Debian systems, the full text of the GNU General Public\n"
+" License version 2 can be found in the file\n"
+" `/usr/share/common-licenses/GPL-2'.\n"
+"\n"
+msgstr ""
+"Files: *\n"
+"Copyright: Copyright 1998 John Doe <jdoe@example.com>\n"
+"License: GPL-2+\n"
+" This program is free software; you can redistribute it\n"
+" [...]\n"
+" .\n"
+" On Debian systems, the full text of the GNU General Public\n"
+" License version 2 can be found in the file\n"
+" `/usr/share/common-licenses/GPL-2'.\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:790
+#, no-wrap
+msgid ""
+"Files: debian/*\n"
+"Copyright: Copyright 1998 Jane Smith <jsmith@example.net>\n"
+"License:\n"
+" [LICENSE TEXT]"
+msgstr ""
+"Files: debian/*\n"
+"Copyright: Copyright 1998 Jane Smith <jsmith@example.net>\n"
+"License:\n"
+" [LICENSE TEXT]"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:821
+msgid "Modifying the upstream source"
+msgstr "修改上游的原始碼"
+
+#. type: frame
+#: packaging-tutorial.tex:821
+msgid "Often needed:"
+msgstr "通常發生於"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Fix bugs or add customizations that are specific to Debian"
+msgstr "需要修正缺陷或者新增 Debian 客製化修改"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Backport fixes from a newer upstream release"
+msgstr "從新的上游發行版中移值補丁回來"
+
+#. type: frame
+#: packaging-tutorial.tex:821
+msgid "Several methods to do it:"
+msgstr "列出可實行的方法"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Modifying the files directly"
+msgstr "直接修改檔案"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Simple"
+msgstr "簡單"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "But no way to track and document the changes"
+msgstr "但是沒有修改歷程等相關文件可供追蹤"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Using patch systems"
+msgstr "使用補丁系統"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Eases contributing your changes to upstream"
+msgstr "讓修改更容易的回到上游"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid "Helps sharing the fixes with derivatives"
+msgstr "能夠分享給相關衍生性版本"
+
+#. type: itemize
+#: packaging-tutorial.tex:821
+msgid ""
+"Gives more exposure to the changes\\\\ \\url{http://patch-tracker.debian."
+"org/}"
+msgstr "讓修改更具有揭露性\\\\ \\url{http://patch-tracker.debian.org/}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:851
+msgid "Patch systems"
+msgstr "補丁系統"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "Principle: changes are stored as patches in \\texttt{debian/patches/}"
+msgstr "原則: 修改需以補丁的型式存放在 \\texttt{debian/patches/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "Applied and unapplied during build"
+msgstr "在構建時可選擇是否引入補丁"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid ""
+"Past: several implementations -- \\textsl{simple-patchsys} (\\textsl{cdbs}), "
+"\\textsl{dpatch}, \\textbf{\\textsl{quilt}}"
+msgstr ""
+"以往有數種實作方法 -- \\textsl{simple-patchsys} (\\textsl{cdbs}), "
+"\\textsl{dpatch}, \\textbf{\\textsl{quilt}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "Each supports two \\texttt{debian/rules} targets:"
+msgstr "每一個皆支援兩個 \\texttt{debian/rules} targets:"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "\\texttt{debian/rules patch}: apply all patches"
+msgstr "\\texttt{debian/rules patch}: 引入所有補丁"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "\\texttt{debian/rules unpatch}: de-apply all patches"
+msgstr "\\texttt{debian/rules unpatch}: 卸載所有補丁"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "More documentation: \\url{http://wiki.debian.org/debian/patches}"
+msgstr "更多文件可參照: \\url{http://wiki.debian.org/debian/patches}"
+
+#. type: textbf{#1}
+#: packaging-tutorial.tex:851
+msgid "New source package format with built-in patch system: 3.0 (quilt)"
+msgstr "新的原始碼套件格式和內建補丁系統: 3.0 (quilt)"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid "Recommended solution"
+msgstr "建議的解決方案"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid ""
+"You need to learn \\textsl{quilt}\\\\ \\url{http://pkg-perl.alioth.debian."
+"org/howto/quilt.html}"
+msgstr ""
+"你需要學習 \\textsl{quilt}\\\\ \\url{http://pkg-perl.alioth.debian.org/howto/"
+"quilt.html}"
+
+#. type: itemize
+#: packaging-tutorial.tex:851
+msgid ""
+"Patch-system-agnostic tool in \\texttt{devscripts}: \\texttt{edit-patch}"
+msgstr "補丁系統相容工具 \\texttt{devscripts}: \\texttt{edit-patch}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:868
+msgid "Documentation of patches"
+msgstr "補丁的相關文件"
+
+#. type: itemize
+#: packaging-tutorial.tex:868
+msgid "Standard headers at the beginning of the patch"
+msgstr "補丁一開頭即為標準檔頭"
+
+#. type: itemize
+#: packaging-tutorial.tex:868
+msgid ""
+"Documented in DEP-3 - Patch Tagging Guidelines\\\\ \\url{http://dep.debian."
+"net/deps/dep3/}"
+msgstr ""
+"DEP-3 文件 - Patch Tagging Guidelines\\\\ \\url{http://dep.debian.net/deps/"
+"dep3/}"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:868
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"Description: Fix widget frobnication speeds\n"
+" Frobnicating widgets too quickly tended to cause explosions.\n"
+"Forwarded: http://lists.example.com/2010/03/1234.html\n"
+"Author: John Doe <johndoe-guest@users.alioth.debian.org>\n"
+"Applied-Upstream: 1.2, http://bzr.foo.com/frobnicator/revision/123\n"
+"Last-Update: 2010-03-29\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"Description: Fix widget frobnication speeds\n"
+" Frobnicating widgets too quickly tended to cause explosions.\n"
+"Forwarded: http://lists.example.com/2010/03/1234.html\n"
+"Author: John Doe <johndoe-guest@users.alioth.debian.org>\n"
+"Applied-Upstream: 1.2, http://bzr.foo.com/frobnicator/revision/123\n"
+"Last-Update: 2010-03-29\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:872
+#, no-wrap
+msgid ""
+"--- a/src/widgets.c\n"
+"+++ b/src/widgets.c\n"
+"@@ -101,9 +101,6 @@ struct {"
+msgstr ""
+"--- a/src/widgets.c\n"
+"+++ b/src/widgets.c\n"
+"@@ -101,9 +101,6 @@ struct {"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:892
+msgid "Doing things during installation and removal"
+msgstr "安裝以及卸載的相關動作"
+
+#. type: itemize
+#: packaging-tutorial.tex:892
+msgid "Decompressing the package is sometimes not enough"
+msgstr "只解壓縮套件, 有時會略感不足"
+
+#. type: itemize
+#: packaging-tutorial.tex:892
+msgid ""
+"Create/remove system users, start/stop services, manage "
+"\\textsl{alternatives}"
+msgstr "新增/ 刪除系統使用者, 啟動/停止服務, 控制 \\textsl{alternatives}"
+
+#. type: itemize
+#: packaging-tutorial.tex:892
+msgid ""
+"Done in \\textsl{maintainer scripts}\\\\ \\texttt{preinst, postinst, prerm, "
+"postrm}"
+msgstr ""
+"在  \\textsl{maintainer scripts}完成\\\\ \\texttt{preinst, postinst, prerm, "
+"postrm}"
+
+#. type: itemize
+#: packaging-tutorial.tex:892
+msgid "Snippets for common actions can be generated by debhelper"
+msgstr "有些共同的動作可以被 debhelper 所生成"
+
+#. type: itemize
+#: packaging-tutorial.tex:892
+msgid "Documentation:"
+msgstr "文件"
+
+#. type: itemize
+#: packaging-tutorial.tex:892
+msgid ""
+"Debian Policy Manual, chapter 6\\\\ {\\footnotesize \\url{http://www.debian."
+"org/doc/debian-policy/ch-maintainerscripts}}"
+msgstr ""
+"Debian維護手冊, 第6章\\\\ {\\footnotesize \\url{http://www.debian.org/doc/"
+"debian-policy/ch-maintainerscripts}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:908
+msgid ""
+"Debian Developer's Reference, chapter 6.4\\\\ {\\scriptsize \\url{http://www."
+"debian.org/doc/developers-reference/best-pkging-practices.html}}"
+msgstr ""
+"Debian 開發者參考, 第6.4章\\\\ {\\scriptsize \\url{http://www.debian.org/doc/"
+"developers-reference/best-pkging-practices.html}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:908
+msgid ""
+"{\\footnotesize \\url{http://people.debian.org/~srivasta/MaintainerScripts."
+"html}}"
+msgstr ""
+"{\\footnotesize \\url{http://people.debian.org/~srivasta/MaintainerScripts."
+"html}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:908
+msgid "Prompting the user"
+msgstr "提示使用者"
+
+#. type: itemize
+#: packaging-tutorial.tex:908
+msgid "Must be done with \\textbf{debconf}"
+msgstr "務必使用 \\textbf{debconf}"
+
+#. type: itemize
+#: packaging-tutorial.tex:908
+msgid ""
+"Documentation: \\texttt{debconf-devel(7)} (\\texttt{debconf-doc} package)"
+msgstr "文件: \\texttt{debconf-devel(7)} (\\texttt{debconf-doc} 套件)"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:914
+msgid "Monitoring upstream versions"
+msgstr "監看上游版本"
+
+#. type: itemize
+#: packaging-tutorial.tex:914
+msgid ""
+"Specify where to look in \\texttt{debian/watch} (see \\texttt{uscan(1)})"
+msgstr "在 \\texttt{debian/watch} 中指定要監看的位址 (參考 \\texttt{uscan(1)})"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:914
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"version=3\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"version=3\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:917
+#, no-wrap
+msgid ""
+"http://tmrc.mit.edu/mirror/twisted/Twisted/(\\d\\.\\d)/ \\\n"
+"  Twisted-([\\d\\.]*)\\.tar\\.bz2\n"
+"    "
+msgstr ""
+"http://tmrc.mit.edu/mirror/twisted/Twisted/(\\d\\.\\d)/ \\\n"
+"  Twisted-([\\d\\.]*)\\.tar\\.bz2\n"
+"    "
+
+#. type: itemize
+#: packaging-tutorial.tex:931
+msgid ""
+"Debian infrastructure that makes use of \\texttt{debian/watch}:\\\\ "
+"\\textbf{Debian External Health Status}\\\\ \\url{http://dehs.alioth.debian."
+"org/}"
+msgstr ""
+"Debian 基礎建設使用 \\texttt{debian/watch}:\\\\ \\textbf{Debian External "
+"Health Status}\\\\ \\url{http://dehs.alioth.debian.org/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:931
+msgid ""
+"Maintainer warned by emails sent to the Package Tracking System\\\\ "
+"\\url{http://packages.qa.debian.org/}"
+msgstr ""
+"Package Tracking System 會發出電子郵件告知維護者\\\\ \\url{http://packages."
+"qa.debian.org/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:931
+msgid "\\texttt{uscan}: run a manual check"
+msgstr "\\texttt{uscan}: 執行手動確認"
+
+#. type: itemize
+#: packaging-tutorial.tex:931
+msgid ""
+"\\texttt{uupdate}: try to update your package to the latest upstream version"
+msgstr "\\texttt{uupdate}: 讓你的套件更新到最新的上游版本"
+
+#. type: subsection{#2}
+#: packaging-tutorial.tex:969
+msgid "Packaging with a Version Control System (SVN, Git)"
+msgstr "使用版本控制系統來進行打包 (SVN, Git)"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:969
+msgid "Packaging with a Version Control System"
+msgstr "使用版本控制系統來進行打包 "
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid ""
+"Several tools to help manage branches and tags for your packaging work:\\\\ "
+"\\texttt{svn-buildpackage}, \\texttt{git-buildpackage}"
+msgstr ""
+"有數種工具可以來協助管理 branches and tags 以進行打包的動作:\\\\ "
+"\\texttt{svn-buildpackage}, \\texttt{git-buildpackage}"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid "Example: \\texttt{git-buildpackage}"
+msgstr "範例: \\texttt{git-buildpackage}"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid ""
+"\\texttt{upstream} branch to track upstream with \\texttt{upstream/"
+"\\textsl{version}} tags"
+msgstr ""
+"\\texttt{upstream} 分支使用 \\texttt{upstream/\\textsl{version}} 標籤來追蹤上"
+"游"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid "\\texttt{master} branch tracks the Debian package"
+msgstr "\\texttt{master} 分支追蹤 Debian 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid "\\texttt{debian/\\textsl{version}} tags for each upload"
+msgstr "\\texttt{debian/\\textsl{version}} 會對每個上傳進行標籤"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid ""
+"\\texttt{pristine-tar} branch to be able to rebuild the upstream tarball"
+msgstr "\\texttt{pristine-tar} 分支能夠重新構建上游壓縮檔"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid ""
+"\\texttt{Vcs-*} fields in \\texttt{debian/control} to locate the repository"
+msgstr "\\texttt{Vcs-*} 在 \\texttt{debian/control} 的欄位能夠定位目錄"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid "\\url{http://wiki.debian.org/Alioth/Git}"
+msgstr "\\url{http://wiki.debian.org/Alioth/Git}"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid "\\url{http://wiki.debian.org/Alioth/Svn}"
+msgstr "\\url{http://wiki.debian.org/Alioth/Svn}"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:969
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\scriptsize]\n"
+"Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/devscripts.git\n"
+"Vcs-Git: git://anonscm.debian.org/collab-maint/devscripts.git\n"
+"  "
+msgstr ""
+"[basicstyle=\\ttfamily\\scriptsize]\n"
+"Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/devscripts.git\n"
+"Vcs-Git: git://anonscm.debian.org/collab-maint/devscripts.git\n"
+"  "
+
+#. type: lstlisting
+#: packaging-tutorial.tex:969
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\scriptsize]\n"
+"Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libwww-perl/\n"
+"Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libwww-perl\n"
+"  "
+msgstr ""
+"[basicstyle=\\ttfamily\\scriptsize]\n"
+"Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libwww-perl/\n"
+"Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libwww-perl\n"
+"  "
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid ""
+"VCS-agnostic interface: \\texttt{debcheckout}, \\texttt{debcommit}, "
+"\\texttt{debrelease}\\\\"
+msgstr ""
+"VCS 相容介面: \\texttt{debcheckout}, \\texttt{debcommit}, "
+"\\texttt{debrelease}\\\\"
+
+#. type: itemize
+#: packaging-tutorial.tex:969
+msgid ""
+"\\texttt{debcheckout grep} $\\rightarrow$ checks out the source package from "
+"Git"
+msgstr ""
+"\\texttt{debcheckout grep} $\\rightarrow$ 從Git checks out 原始碼套件出來"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:992
+msgid "Backporting packages"
+msgstr "向前移值套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid ""
+"Goal: use a newer version of a package on an older system\\\\ e.g. use "
+"\\textsl{mutt} from Debian \\textsl{unstable} on Debian \\textsl{stable}"
+msgstr ""
+"目標: 在舊有系統上使用較新的套件版本\\\\ 例: 使用 \\textsl{mutt} from Debian "
+"\\textsl{unstable} on Debian \\textsl{stable}"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid "General idea:"
+msgstr "一般來說"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid "Take the source package from Debian unstable"
+msgstr "從 Debian unstable 抓原始碼套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid "Modify it so that it builds and works fine on Debian stable"
+msgstr "透過修改讓套件可以構建且正常運行在 Debian stable 上"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid "Sometimes trivial (no changes needed)"
+msgstr "有時簡單 (不需任何修改)"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid "Sometimes difficult"
+msgstr "有時困難"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid "Sometimes impossible (many unavailable dependencies)"
+msgstr "有時不可行 (有太多無法解決的相依性問題)"
+
+#. type: itemize
+#: packaging-tutorial.tex:992
+msgid ""
+"Some backports are provided and supported by the Debian project\\\\ "
+"\\url{http://backports.debian.org/}"
+msgstr ""
+"Debian project 提供部份向前相容的套件\\\\ \\url{http://backports.debian.org/}"
+
+#. type: section{#2}
+#: packaging-tutorial.tex:1023
+msgid "Maintaining packages in Debian"
+msgstr "維護 Debian 套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1023
+msgid "Several ways to contribute to Debian"
+msgstr "一些為 Debian 貢獻的方法"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "\\textbf{Worst} way to contribute:"
+msgstr "\\textbf{不建議} 提供貢獻的方法"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1023
+msgid "Package your own application"
+msgstr "打包自有應用程式"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1023
+msgid "Get it into Debian"
+msgstr "放進 Debian"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1023
+msgid "Disappear"
+msgstr "消失"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "\\textbf{Better} ways to contribute:"
+msgstr "\\textbf{較建議} 提供貢獻的方法:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "Get involved in packaging teams"
+msgstr "實際參與打包群組"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "Many teams that focus on set of packages, and need help"
+msgstr "許多群組專注於特定套件, 且皆需要協助"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "List available at \\url{http://wiki.debian.org/Teams}"
+msgstr "列出可用群組 \\url{http://wiki.debian.org/Teams}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "An excellent way to learn from more experienced contributors"
+msgstr "從更有經驗的貢獻者身上學習"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "Adopt existing unmaintained packages (\\textsl{orphaned packages})"
+msgstr "認養現有但無人維護之套件 (\\textsl{orphaned packages})"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "Bring new software to Debian"
+msgstr "將新的軟體帶進 Debian"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "Only if it's interesting/useful enough, please"
+msgstr "必須是有用或者有趣的"
+
+#. type: itemize
+#: packaging-tutorial.tex:1023
+msgid "Are there alternatives already packaged in Debian?"
+msgstr "Debian 原有套件是否就可以滿足需求?"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1061
+msgid "Adopting orphaned packages"
+msgstr "認養無人維護的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid "Many unmaintained packages in Debian"
+msgstr "Debian 有許多尚待維護的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid "Full list + process: \\url{http://www.debian.org/devel/wnpp/}"
+msgstr "完整清單以及流程: \\url{http://www.debian.org/devel/wnpp/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid "Installed on your machine: \\texttt{wnpp-alert}"
+msgstr "將 \\texttt{wnpp-alert} 安裝到機器上"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid "Different states:"
+msgstr "不同的狀態:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid ""
+"\\textbf{O}rphaned: the package is unmaintained\\\\ Feel free to adopt it"
+msgstr "\\textbf{O}rphaned: 此套件目前被遺棄中 \\\\ 歡迎認領"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid ""
+"\\textbf{RFA}: \\textbf{R}equest \\textbf{F}or \\textbf{A}dopter\\\\ "
+"Maintainer looking for adopter, but continues work in the meantime\\\\ Feel "
+"free to adopt it. A mail to the current maintainer is polite"
+msgstr ""
+"\\textbf{RFA}: \\textbf{R}equest \\textbf{F}or \\textbf{A}dopter\\\\ 此套件維"
+"護中, 但維護者在尋找繼任者\\\\ 歡迎認養, 但禮貌上先以電子郵件知會現任維護者"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid ""
+"\\textbf{ITA}: \\textbf{I}ntent \\textbf{T}o \\textbf{A}dopt\\\\ Someone "
+"intends to adopt the package\\\\ You could propose your help!"
+msgstr ""
+"\\textbf{ITA}: \\textbf{I}ntent \\textbf{T}o \\textbf{A}dopt\\\\ 有人意圖認養"
+"此套件\\\\ 但你依然可以提出協助的需求"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid ""
+"\\textbf{RFH}: \\textbf{R}equest \\textbf{F}or \\textbf{H}elp\\\\ The "
+"maintainer is looking for help"
+msgstr ""
+"\\textbf{RFH}: \\textbf{R}equest \\textbf{F}or \\textbf{H}elp\\\\ 維護者尋求"
+"協助中"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid "Some unmaintained packages not detected \\arr not orphaned yet"
+msgstr "有些無人維護的套件沒有被偵測到\\arr 不是被遺棄的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1061
+msgid ""
+"When in doubt, ask \\texttt{debian-qa@lists.debian.org} \\\\ or "
+"\\texttt{\\#debian-qa} on \\texttt{irc.debian.org}"
+msgstr ""
+"若有任何疑問, 請到 \\texttt{debian-qa@lists.debian.org} 提出 \\\\ 或者前往 "
+"\\texttt{irc.debian.org}裡的頻道 \\texttt{\\#debian-qa}詢問"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1068
+msgid "Adopting a package: example"
+msgstr "認領套件: 範例"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1068
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"From: You <you@yourdomain>\n"
+"To: 640454@bugs.debian.org, control@bugs.debian.org\n"
+"Cc: Francois Marier <francois@debian.org>\n"
+"Subject: ITA: verbiste -- French conjugator\n"
+"\n"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"From: You <you@yourdomain>\n"
+"To: 640454@bugs.debian.org, control@bugs.debian.org\n"
+"Cc: Francois Marier <francois@debian.org>\n"
+"Subject: ITA: verbiste -- French conjugator\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1072
+#, no-wrap
+msgid ""
+"retitle 640454 ITA: verbiste -- French conjugator\n"
+"owner 640454 !\n"
+"thanks\n"
+"\n"
+msgstr ""
+"retitle 640454 ITA: verbiste -- French conjugator\n"
+"owner 640454 !\n"
+"thanks\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1074
+#, no-wrap
+msgid ""
+"Hi,\n"
+"\n"
+msgstr ""
+"Hi,\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1076
+#, no-wrap
+msgid ""
+"I am using verbiste and I am willing to take care of the package.\n"
+"\n"
+msgstr ""
+"I am using verbiste and I am willing to take care of the package.\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1078
+#, no-wrap
+msgid ""
+"Cheers,\n"
+"\n"
+msgstr ""
+"Cheers,\n"
+"\n"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1080
+#, no-wrap
+msgid "You"
+msgstr "You"
+
+#. type: itemize
+#: packaging-tutorial.tex:1087
+msgid ""
+"Polite to contact the previous maintainer (especially if the package was "
+"RFAed, not orphaned)"
+msgstr "有禮貌的連絡上一任維護者 (尤其套件狀態為 RFA 而不是 orphaned)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1087
+msgid "Very good idea to contact the upstream project"
+msgstr "適時的和上游專案有所連繫"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1111
+msgid "Getting your package in Debian"
+msgstr "將你的套件放入 Debian"
+
+#. type: itemize
+#: packaging-tutorial.tex:1111
+msgid "You do not need any official status to get your package into Debian"
+msgstr "不需要具備任何官方身份就可以將你的套件放進 Debian"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1111
+msgid ""
+"Submit an \\textbf{ITP} bug (\\textbf{I}ntend \\textbf{T}o \\textbf{P}"
+"ackage) using \\texttt{reportbug wnpp}"
+msgstr ""
+"使用 \\texttt{reportbug wnpp} 送出 \\textbf{ITP} bug (\\textbf{I}ntend "
+"\\textbf{T}o \\textbf{P}ackage)"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1111
+msgid "Prepare a source package"
+msgstr "準備好原始碼套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1111
+msgid "Find a Debian Developer that will sponsor your package"
+msgstr "找一位 Debian Developer 來協助確認你的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1111
+msgid "Official status (when you are an experienced package maintainer):"
+msgstr "官方身份 (當你具備許多打包維護的經驗):"
+
+#. type: itemize
+#: packaging-tutorial.tex:1111
+msgid ""
+"\\textbf{Debian Maintainer (DM):}\\\\ Permission to upload your own packages"
+"\\\\ See \\url{http://wiki.debian.org/DebianMaintainer}"
+msgstr ""
+"\\textbf{Debian Maintainer (DM):}\\\\ 允許上傳你自己的套件\\\\ 參照 "
+"\\url{http://wiki.debian.org/DebianMaintainer}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1111
+msgid ""
+"\\textbf{Debian Developer (DD):}\\\\ Debian project member; can vote and "
+"upload any package"
+msgstr ""
+"\\textbf{Debian Developer (DD):}\\\\ Debian project member; 能夠投票且上傳任"
+"何套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1139
+msgid "Things to check before asking for sponsorship"
+msgstr "發出協助需求前需確認事項"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Debian puts \\textbf{a lot of focus on quality}"
+msgstr "Debian \\textbf{非常重視品質}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Generally, \\textbf{sponsors are hard to find and busy}"
+msgstr "一般而言, \\textbf{協助人員很忙又很難找}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Make sure your package is ready before asking for sponsorship"
+msgstr "請再三確認你的套件已經很完整, 再提出協助確認需求"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Things to check:"
+msgstr "需要確認之事項"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid ""
+"Avoid missing build-dependencies: make sure that your package build fine in "
+"a clean \\textsl{sid} \\textsl{chroot}"
+msgstr ""
+"避免忘了加入構建相依性: 確認你的套件可以在乾淨的 \\textsl{sid} "
+"\\textsl{chroot} 中正常構建"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Using \\texttt{pbuilder} is recommended"
+msgstr "建議使用\\texttt{pbuilder}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Run \\texttt{lintian -EviIL +pedantic} on your package"
+msgstr "在你的套件上執行 \\texttt{lintian -EviIL +pedantic}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Errors must be fixed, all other problems should be fixed"
+msgstr "若出現Errors 則必須被修復, 其他問題也需一併修復"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "Do extensive testing of your package, of course"
+msgstr "請在你的套件上進行大規模的測試驗證"
+
+#. type: itemize
+#: packaging-tutorial.tex:1139
+msgid "In doubt, ask for help"
+msgstr "若有疑問, 請提出問題以尋求協助"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1174
+msgid "Where to find help?"
+msgstr "去哪邊尋求協助?"
+
+#. type: frame
+#: packaging-tutorial.tex:1174
+msgid "Help you will need:"
+msgstr "可針對下列事項進行協助"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "Advice and answers to your questions, code reviews"
+msgstr "對於提出的問題, 給予建議或答案, 以及程式碼審查"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "Sponsorship for your uploads, once your package is ready"
+msgstr "協助確認並且上傳你已經準備好的套件"
+
+#. type: frame
+#: packaging-tutorial.tex:1174
+msgid "You can get help from:"
+msgstr "你可以從下列得到協助"
+
+#. type: textbf{#1}
+#: packaging-tutorial.tex:1174
+msgid "Other members of a packaging team"
+msgstr "其他打包部門的成員"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "List of teams: \\url{http://wiki.debian.org/Teams}"
+msgstr "部門列表: \\url{http://wiki.debian.org/Teams}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid ""
+"The \\textbf{Debian Mentors group} (if your package does not fit in a team)"
+msgstr "The \\textbf{Debian Mentors group} (如果你的套件找不到相對應的部門)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "\\url{http://wiki.debian.org/DebianMentorsFaq}"
+msgstr "\\url{http://wiki.debian.org/DebianMentorsFaq}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid ""
+"Mailing list: \\url{debian-mentors@lists.debian.org}\\\\ {\\small (also a "
+"good way to learn by accident)}"
+msgstr ""
+"Mailing list: \\url{debian-mentors@lists.debian.org}\\\\ {\\small (有時可以學"
+"到不錯的東西)}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "IRC: \\texttt{\\#debian-mentors} on \\texttt{irc.debian.org}"
+msgstr "IRC: \\texttt{\\#debian-mentors} on \\texttt{irc.debian.org}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "\\url{http://mentors.debian.net/}"
+msgstr "\\url{http://mentors.debian.net/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "Documentation: \\url{http://mentors.debian.net/intro-maintainers}"
+msgstr "文件: \\url{http://mentors.debian.net/intro-maintainers}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "\\textbf{Localized mailing lists} (get help in your language)"
+msgstr "\\textbf{當地 mailing lists} (根據你的語言來尋求協助)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid ""
+"\\texttt{debian-devel-\\{french,italian,portuguese,spanish\\}@lists.d.o}"
+msgstr ""
+"\\texttt{debian-devel-\\{french,italian,portuguese,spanish\\}@lists.d.o}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "Full list: \\url{https://lists.debian.org/devel.html}"
+msgstr "完整清單: \\url{https://lists.debian.org/devel.html}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1174
+msgid "Or users lists: \\url{https://lists.debian.org/users.html}"
+msgstr "或者使用者清單: \\url{https://lists.debian.org/users.html}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1192
+msgid "More documentation"
+msgstr "更多文件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1192
+msgid ""
+"Debian Developers' Corner\\\\ \\url{http://www.debian.org/devel/}\\\\ "
+"{\\small Links to many resources about Debian development}"
+msgstr ""
+"Debian Developers' Corner\\\\ \\url{http://www.debian.org/devel/}\\\\ "
+"{\\small 有許多開發 Debian 相關的資源連結}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1192
+msgid ""
+"Debian New Maintainers' Guide\\\\ \\url{http://www.debian.org/doc/maint-"
+"guide/}\\\\ {\\small An introduction to Debian packaging, but could use an "
+"update}"
+msgstr ""
+"Debian New Maintainers' Guide\\\\ \\url{http://www.debian.org/doc/maint-"
+"guide/}\\\\ {\\small 對於 Debian 打包的簡介, but could use an update}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1192
+msgid ""
+"Debian Developer's Reference\\\\ \\url{http://www.debian.org/doc/developers-"
+"reference/}\\\\ {\\small Mostly about Debian procedures, but also some best "
+"packaging practices (part 6)}"
+msgstr ""
+"Debian Developer's Reference\\\\ \\url{http://www.debian.org/doc/developers-"
+"reference/}\\\\ {\\small 比較多關於 Debian 的常規, 但也含有一些很棒的實際範"
+"例 (part 6)}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1192
+msgid "Debian Policy\\\\ \\url{http://www.debian.org/doc/debian-policy/}\\\\"
+msgstr "Debian Policy\\\\ \\url{http://www.debian.org/doc/debian-policy/}\\\\"
+
+#. type: itemize
+#: packaging-tutorial.tex:1198
+msgid ""
+"{\\small \\begin{itemize} \\item \\small All the requirements that every "
+"package must satisfy \\item \\small Specific policies for Perl, Java, "
+"Python, \\ldots \\end{itemize}}"
+msgstr ""
+"{\\small \\begin{itemize} \\item \\small 所有需求都必須在每個套件中被滿足 "
+"\\item \\small 對於 Perl, Java, Python, \\ldots 特定的規則\\end{itemize}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1203
+msgid ""
+"Ubuntu Packaging Guide\\\\ \\url{http://developer.ubuntu.com/resources/tools/"
+"packaging/}"
+msgstr ""
+"Ubuntu 打包指南\\\\ \\url{http://developer.ubuntu.com/resources/tools/"
+"packaging/}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1217
+msgid "Debian dashboards for maintainers"
+msgstr "Debian 給維護者的dashboards"
+
+#. type: itemize
+#: packaging-tutorial.tex:1217
+msgid ""
+"\\textbf{Source package centric}: Package Tracking System (PTS)\\\\ "
+"\\url{http://packages.qa.debian.org/dpkg}"
+msgstr ""
+"\\textbf{原始碼套件中心}: 套件追蹤系統 Package Tracking System (PTS)\\\\ "
+"\\url{http://packages.qa.debian.org/dpkg}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1217
+msgid ""
+"\\textbf{Maintainer/team centric}: Developer's Packages Overview (DDPO)\\\\ "
+"\\url{http://qa.debian.org/developer.php?login=pkg-ruby-extras-"
+"maintainers@lists.alioth.debian.org}"
+msgstr ""
+"\\textbf{維護者/ 小組中心}: 開發者套件概述 Developer's Packages Overview "
+"(DDPO)\\\\ \\url{http://qa.debian.org/developer.php?login=pkg-ruby-extras-"
+"maintainers@lists.alioth.debian.org}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1217
+msgid ""
+"\\textbf{TODO-list oriented}: Debian Maintainer Dashboard (DMD)\\\\ "
+"\\url{http://udd.debian.org/dmd.cgi}"
+msgstr ""
+"\\textbf{待作清單列表}: Debian Maintainer Dashboard (DMD)\\\\ \\url{http://"
+"udd.debian.org/dmd.cgi}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1245
+msgid "Using the Debian Bug Tracking System (BTS)"
+msgstr "使用 Debian Bug 追蹤系統 (BTS)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "A quite unique way to manage bugs"
+msgstr "使用特有的方法來管控缺陷"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Web interface to view bugs"
+msgstr "使用 Web 的介面來查看缺陷"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Email interface to make changes to bugs"
+msgstr "使用 Email 的介面來處理缺陷"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Adding information to bugs:"
+msgstr "加入缺陷的資訊"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid ""
+"Write to \\texttt{123456@bugs.debian.org} (does not include the submitter, "
+"you need to add \\texttt{123456-submitter@bugs.debian.org})"
+msgstr ""
+"寫電子郵件到 \\texttt{123456@bugs.debian.org} (若要包含submitter, 你需要加入 "
+"\\texttt{123456-submitter@bugs.debian.org})"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Changing bug status:"
+msgstr "更改缺陷狀態:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Send commands to \\texttt{control@bugs.debian.org}"
+msgstr "送出指令到 \\texttt{control@bugs.debian.org}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Command-line interface: \\texttt{bts} command in \\texttt{devscripts}"
+msgstr "指令列的介面: 在 \\texttt{devscripts}中的指令 \\texttt{bts}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Documentation: \\url{http://www.debian.org/Bugs/server-control}"
+msgstr "文件: \\url{http://www.debian.org/Bugs/server-control}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid "Reporting bugs: use \\texttt{reportbug}"
+msgstr "回報缺陷: 使用 \\texttt{reportbug}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid ""
+"Normally used with a local mail server: install \\texttt{ssmtp} or "
+"\\texttt{nullmailer}"
+msgstr ""
+"通常使用本地郵件服務器: 可透過 \\texttt{ssmtp} 或者 \\texttt{nullmailer} 安裝"
+
+#. type: itemize
+#: packaging-tutorial.tex:1245
+msgid ""
+"Or use \\texttt{reportbug -\\@-template}, then send (manually) to "
+"\\texttt{submit@bugs.debian.org}"
+msgstr ""
+"或者使用 \\texttt{reportbug -\\@-template}, 然後手動送出至 "
+"\\texttt{submit@bugs.debian.org}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1271
+msgid "Using the BTS: examples"
+msgstr "使用 Debian Bug 追蹤系統 (BTS): 範例"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid ""
+"Sending an email to the bug and the submitter:\\\\ \\url{http://bugs.debian."
+"org/cgi-bin/bugreport.cgi?bug=680822\\#10}"
+msgstr ""
+"針對缺陷送出電子郵件給 submitter:\\\\ \\url{http://bugs.debian.org/cgi-bin/"
+"bugreport.cgi?bug=680822\\#10}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid ""
+"Tagging and changing the severity:\\\\ \\url{http://bugs.debian.org/cgi-bin/"
+"bugreport.cgi?bug=680227\\#10}"
+msgstr ""
+"標記並且修改嚴重程度:\\\\ \\url{http://bugs.debian.org/cgi-bin/bugreport.cgi?"
+"bug=680227\\#10}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid ""
+"Reassigning, changing the severity, retitling \\ldots: \\\\ \\url{http://"
+"bugs.debian.org/cgi-bin/bugreport.cgi?bug=680822\\#93}"
+msgstr ""
+"重新指定, 修改嚴重程度, 修改主旨 \\ldots: \\\\ \\url{http://bugs.debian.org/"
+"cgi-bin/bugreport.cgi?bug=680822\\#93}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid ""
+"\\texttt{notfound}, \\texttt{found}, \\texttt{notfixed}, \\texttt{fixed} are "
+"for \\textbf{version-tracking} \\\\ See \\url{https://wiki.debian.org/"
+"HowtoUseBTS\\#Version\\_tracking}"
+msgstr ""
+"\\texttt{notfound}, \\texttt{found}, \\texttt{notfixed}, \\texttt{fixed} 是"
+"給 \\textbf{版本追蹤}來使用\\\\ 參照 \\url{https://wiki.debian.org/"
+"HowtoUseBTS\\#Version\\_tracking}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid ""
+"Using usertags: \\url{http://bugs.debian.org/cgi-bin/bugreport.cgi?msg=42;"
+"bug=642267}\\\\ See \\url{https://wiki.debian.org/bugs.debian.org/usertags}"
+msgstr ""
+"使用使用者標籤: \\url{http://bugs.debian.org/cgi-bin/bugreport.cgi?msg=42;"
+"bug=642267}\\\\ 參照 \\url{https://wiki.debian.org/bugs.debian.org/usertags}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid "BTS Documentation:"
+msgstr " Debian Bug 追蹤系統 (BTS) 文件:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid "\\url{http://www.debian.org/Bugs/}"
+msgstr "\\url{http://www.debian.org/Bugs/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1271
+msgid "\\url{https://wiki.debian.org/HowtoUseBTS}"
+msgstr "\\url{https://wiki.debian.org/HowtoUseBTS}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1298
+msgid "More interested in Ubuntu?"
+msgstr "More interested in Ubuntu?"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Ubuntu mainly manages the divergence with Debian"
+msgstr "Ubuntu 主要管控和 Debian 的差異"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid ""
+"No real focus on specific packages\\\\ Instead, collaboration with Debian "
+"teams"
+msgstr "不針對於特定套件,\\\\ 而是和 Debian team 協同合作"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid ""
+"Usually recommend uploading new packages to Debian first\\\\ \\url{https://"
+"wiki.ubuntu.com/UbuntuDevelopment/NewPackages}"
+msgstr ""
+"一般來說會建議新套件要先上傳到 Debian\\\\ \\url{https://"
+"wiki.ubuntu.com/UbuntuDevelopment/NewPackages}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Possibly a better plan:"
+msgstr "但有更好的方法"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Get involved in a Debian team and act as a bridge with Ubuntu"
+msgstr "參與 Debian team並且和 Ubuntu 建立溝通橋樑"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Help reduce divergence, triage bugs in Launchpad"
+msgstr "協助減少差異並在Launchpad進行缺陷診斷"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Many Debian tools can help:"
+msgstr "許多 Debian 工具能提供協助:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Ubuntu column on the Developer's packages overview"
+msgstr "Developer 的套件大綱中有 ubuntu 欄位"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Ubuntu box on the Package Tracking System"
+msgstr "Ubuntu box on the 套件追蹤系統"
+
+#. type: itemize
+#: packaging-tutorial.tex:1298
+msgid "Receive launchpad bugmail via the PTS"
+msgstr "透過 PTS 收 launchpad bugmail"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1328
+msgid "Conclusions"
+msgstr "結論"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "You now have a full overview of Debian packaging"
+msgstr "現在你對 Debian 打包已經有一個完整的概觀"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "But you will need to read more documentation"
+msgstr "但你需要閱讀更多的文件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "Best practices have evolved over the years"
+msgstr "典範實務是經年累月而成的"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid ""
+"If not sure, use the \\textbf{dh} packaging helper, and the \\textbf{3.0 "
+"(quilt)} format"
+msgstr ""
+"如果不太確定, 使用 \\textbf{dh} 套件小幫手, 以及 \\textbf{3.0 (quilt)} 格式"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "Things that were not covered in this tutorial:"
+msgstr "有些東西沒有在本教學指南中提到:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "UCF -- manage user changes to configuration files when upgrading"
+msgstr "UCF -- 管理更新時用戶設定檔的相關變更"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "dpkg triggers -- group similar maintainer scripts actions together"
+msgstr "dpkg triggers -- 在同一時間運行類似的維護者腳本"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "Debian development organization:"
+msgstr "Debian 組織發展:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid ""
+"Suites: stable, testing, unstable, experimental, security, *-updates, "
+"backports, \\ldots"
+msgstr ""
+"Suites: stable, testing, unstable, experimental, security, *-updates, "
+"backports, \\ldots"
+
+#. type: itemize
+#: packaging-tutorial.tex:1328
+msgid "Debian Blends -- subsets of Debian targeting specific groups"
+msgstr "Debian Blends -- Debian 針對不同領域所設計的子集合"
+
+#. type: centerline{#1}
+#: packaging-tutorial.tex:1328
+msgid "\\large Feedback: \\textbf{packaging-tutorial@packages.debian.org}"
+msgstr "\\large 回饋: \\textbf{packaging-tutorial@packages.debian.org}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1331
+msgid "Legal stuff"
+msgstr "法律相關"
+
+#. type: frame
+#: packaging-tutorial.tex:1334
+msgid "Copyright \\copyright 2011--2013 Lucas Nussbaum -- lucas@debian.org"
+msgstr "Copyright \\copyright 2011--2013 Lucas Nussbaum -- lucas@debian.org"
+
+#. type: frame
+#: packaging-tutorial.tex:1350
+msgid ""
+"{\\small \\textbf{This document is free software}: you can redistribute it "
+"and/or modify it under either (at your option): \\hbr \\begin{itemize} "
+"\\item The terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\\\\ \\url{http://www.gnu.org/licenses/gpl.html} \\br "
+"\\item The terms of the Creative Commons Attribution-ShareAlike 3.0 Unported "
+"License.\\\\ \\url{http://creativecommons.org/licenses/by-sa/3.0/} "
+"\\end{itemize} }"
+msgstr ""
+"{\\small \\textbf{This document is free software}: you can redistribute it "
+"and/or modify it under either (at your option): \\hbr \\begin{itemize} "
+"\\item The terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\\\\ \\url{http://www.gnu.org/licenses/gpl.html} \\br "
+"\\item The terms of the Creative Commons Attribution-ShareAlike 3.0 Unported "
+"License.\\\\ \\url{http://creativecommons.org/licenses/by-sa/3.0/} "
+"\\end{itemize} }"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1379
+msgid "Contribute to this tutorial"
+msgstr "對此教學指南做出貢獻"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "Contribute:"
+msgstr "貢獻:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "{\\small \\texttt{apt-get source packaging-tutorial}}"
+msgstr "{\\small \\texttt{apt-get source packaging-tutorial}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "{\\small \\texttt{debcheckout packaging-tutorial}}"
+msgstr "{\\small \\texttt{debcheckout packaging-tutorial}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid ""
+"{\\small \\texttt{git clone\\\\ git://git.debian.org/collab-maint/packaging-"
+"tutorial.git}}"
+msgstr ""
+"{\\small \\texttt{git clone\\\\ git://git.debian.org/collab-maint/packaging-"
+"tutorial.git}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid ""
+"{\\small \\url{http://git.debian.org/?p=collab-maint/packaging-tutorial.git}}"
+msgstr ""
+"{\\small \\url{http://git.debian.org/?p=collab-maint/packaging-tutorial.git}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "{\\small Open bugs: \\url{bugs.debian.org/src:packaging-tutorial}}"
+msgstr "{\\small 回報缺陷: \\url{bugs.debian.org/src:packaging-tutorial}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "Provide feedback:"
+msgstr "提供回饋:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid ""
+"\\href{mailto:packaging-tutorial@packages.debian.org}"
+"{\\textbf{\\texttt{mailto:packaging-tutorial@packages.debian.org}}}"
+msgstr ""
+"\\href{mailto:packaging-tutorial@packages.debian.org}"
+"{\\textbf{\\texttt{mailto:packaging-tutorial@packages.debian.org}}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "{\\small What should be added to this tutorial?}"
+msgstr "{\\small 有哪些必須加入此教學指南?}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "{\\small What should be improved?}"
+msgstr "{\\small 有哪些部份可以再優化?}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1379
+msgid "{\\small \\texttt{reportbug packaging-tutorial}}"
+msgstr "{\\small \\texttt{reportbug packaging-tutorial}}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid "Practical session 2: packaging GNUjump"
+msgstr "實際演練 2: 打包 GNUjump"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid ""
+"Download GNUjump 1.0.8 from \\url{http://ftp.gnu.org/gnu/gnujump/"
+"gnujump-1.0.8.tar.gz}"
+msgstr ""
+"從 \\url{http://ftp.gnu.org/gnu/gnujump/gnujump-1.0.8.tar.gz} 下載 GNUjump "
+"1.0.8"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid "Create a Debian package for it"
+msgstr "建立一個 Debian 套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid "Install build-dependencies so that you can build the package"
+msgstr "安裝 build-dependencies 以進行構建套件之動作"
+
+#. type: itemize
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid "Get a basic working package"
+msgstr "產生一個基本可運作的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid "Finish filling \\texttt{debian/control} and other files"
+msgstr "完成填入 \\texttt{debian/control} 以及其他檔案"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1397 packaging-tutorial.tex:1645
+msgid "Enjoy"
+msgstr "享受吧"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "Practical session 3: packaging a Java library"
+msgstr "實際演練 3: 打包 Java library"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "Take a quick look at some documentation about Java packaging:\\\\"
+msgstr "先看一下如何打包 Java 相關文件:\\\\"
+
+#. type: itemize
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "\\url{http://wiki.debian.org/Java}"
+msgstr "\\url{http://wiki.debian.org/Java}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "\\url{http://wiki.debian.org/Java/Packaging}"
+msgstr "\\url{http://wiki.debian.org/Java/Packaging}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "\\url{http://www.debian.org/doc/packaging-manuals/java-policy/}"
+msgstr "\\url{http://www.debian.org/doc/packaging-manuals/java-policy/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "\\url{http://pkg-java.alioth.debian.org/docs/tutorial.html}"
+msgstr "\\url{http://pkg-java.alioth.debian.org/docs/tutorial.html}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid ""
+"Paper and slides from a Debconf10 talk about javahelper:\\\\ {\\footnotesize "
+"\\url{http://pkg-java.alioth.debian.org/docs/debconf10-javahelper-paper."
+"pdf}\\\\ \\url{http://pkg-java.alioth.debian.org/docs/debconf10-javahelper-"
+"slides.pdf}}"
+msgstr ""
+"Debconf10 議程中有關 javahelper 相關文件以及投影片:\\\\ {\\footnotesize "
+"\\url{http://pkg-java.alioth.debian.org/docs/debconf10-javahelper-paper."
+"pdf}\\\\ \\url{http://pkg-java.alioth.debian.org/docs/debconf10-javahelper-"
+"slides.pdf}}"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "Download IRClib from \\url{http://moepii.sourceforge.net/}"
+msgstr "從 \\url{http://moepii.sourceforge.net/} 下載 IRClib"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1422 packaging-tutorial.tex:1767
+msgid "Package it"
+msgstr "開始打包"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+msgid "Practical session 4: packaging a Ruby gem"
+msgstr "實際演練 4: 打包  Ruby gem"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+msgid "Take a quick look at some documentation about Ruby packaging:\\\\"
+msgstr "先看一下如何打包 Ruby 相關文件:\\\\"
+
+#. type: itemize
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+msgid "\\url{http://wiki.debian.org/Ruby}"
+msgstr "\\url{http://wiki.debian.org/Ruby}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+msgid "\\url{http://wiki.debian.org/Teams/Ruby}"
+msgstr "\\url{http://wiki.debian.org/Teams/Ruby}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+msgid "\\url{http://wiki.debian.org/Teams/Ruby/Packaging}"
+msgstr "\\url{http://wiki.debian.org/Teams/Ruby/Packaging}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+msgid ""
+"\\texttt{gem2deb(1)}, \\texttt{dh\\_ruby(1)} (in the \\texttt{gem2deb} "
+"package)"
+msgstr "\\texttt{gem2deb(1)}, \\texttt{dh\\_ruby(1)} (\\texttt{gem2deb} 套件)"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1809
+#, fuzzy
+#| msgid ""
+#| "Create a basic Debian source package from the \\texttt{Acme} CPAN "
+#| "distribution:\\\\ \\verb|dh-make-perl --cpan Acme|"
+msgid ""
+"Create a basic Debian source package from the \\texttt{net-ssh} gem:\\\\ "
+"\\texttt{gem2deb net-ssh}"
+msgstr ""
+"從 \\texttt{Acme} CPAN 發行版:\\\\ \\verb|dh-make-perl --cpan Acme| 建立基本"
+"的 Debian 原始碼套件"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1443 packaging-tutorial.tex:1462
+#: packaging-tutorial.tex:1809 packaging-tutorial.tex:1906
+msgid "Improve it so that it becomes a proper Debian package"
+msgstr "適時的優化, 讓它成為一個合適的 Debian 套件"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1462 packaging-tutorial.tex:1906
+msgid "Practical session 5: packaging a Perl module"
+msgstr "實際演練 5: 打包  Perl 模組"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1462 packaging-tutorial.tex:1906
+msgid "Take a quick look at some documentation about Perl packaging:\\\\"
+msgstr "先看一下如何打包 Perl 相關文件:\\\\"
+
+#. type: itemize
+#: packaging-tutorial.tex:1462 packaging-tutorial.tex:1906
+msgid "\\url{http://pkg-perl.alioth.debian.org/}"
+msgstr "\\url{http://pkg-perl.alioth.debian.org/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1462 packaging-tutorial.tex:1906
+msgid "\\url{http://wiki.debian.org/Teams/DebianPerlGroup}"
+msgstr "\\url{http://wiki.debian.org/Teams/DebianPerlGroup}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1462 packaging-tutorial.tex:1906
+msgid ""
+"\\texttt{dh-make-perl(1)}, \\texttt{dpt(1)} (in the \\texttt{pkg-perl-tools} "
+"package)"
+msgstr ""
+"\\texttt{dh-make-perl(1)}, \\texttt{dpt(1)} (in the \\texttt{pkg-perl-tools} "
+"package)"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1462 packaging-tutorial.tex:1906
+msgid ""
+"Create a basic Debian source package from the \\texttt{Acme} CPAN "
+"distribution:\\\\ \\verb|dh-make-perl --cpan Acme|"
+msgstr ""
+"從 \\texttt{Acme} CPAN 發行版:\\\\ \\verb|dh-make-perl --cpan Acme| 建立基本"
+"的 Debian 原始碼套件"
+
+#. type: section{#2}
+#: packaging-tutorial.tex:1464
+msgid "Answers to practical sessions"
+msgstr "深入淺出實際演練"
+
+#. type: center
+#: packaging-tutorial.tex:1470
+msgid "\\LARGE Answers to"
+msgstr "\\LARGE 深入淺出"
+
+#. type: center
+#: packaging-tutorial.tex:1470
+msgid "[0.5em] practical sessions"
+msgstr "[0.5em] 實際演練"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1528
+msgid "Fetching the source"
+msgstr "把原始碼抓下來"
+
+#. type: enumerate
+#: packaging-tutorial.tex:1528
+msgid ""
+"Go to \\url{http://ftp.debian.org/debian/pool/main/g/grep/} and download "
+"version 2.6.3-3 of the package"
+msgstr ""
+"前往 \\url{http://ftp.debian.org/debian/pool/main/g/grep/} 並且下載版本 "
+"2.6.3-3 的套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid ""
+"Use dget to download the \\texttt{.dsc} file:\\\\ {\\small \\texttt{dget "
+"http://cdn.debian.net/debian/pool/main/g/grep/grep\\_2.6.3-3.dsc}}"
+msgstr ""
+"使用 dget 下載 \\texttt{.dsc} 檔案:\\\\ {\\small \\texttt{dget http://cdn."
+"debian.net/debian/pool/main/g/grep/grep\\_2.6.3-3.dsc}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid ""
+"According to \\url{http://packages.qa.debian.org/grep}, \\texttt{grep} "
+"version 2.6.3-3 is currently in \\textsl{stable} (\\textsl{squeeze}). If you "
+"have \\texttt{deb-src} lines for \\textsl{squeeze} in your \\texttt{/etc/apt/"
+"sources.list}, you can use:\\\\ \\texttt{apt-get source grep=2.6.3-3}\\\\ or "
+"\\texttt{apt-get source grep/stable}\\\\ or, if you feel lucky: \\texttt{apt-"
+"get source grep}"
+msgstr ""
+"根據 \\url{http://packages.qa.debian.org/grep}, \\texttt{grep} 版本 2.6.3-3 "
+"目前為 \\textsl{stable} (\\textsl{squeeze}). 如果你 已加入 \\texttt{deb-src} "
+"這一行並搭配 \\textsl{squeeze} 版本在 \\texttt{/etc/apt/sources.list} 中, 你"
+"可以使用:\\\\ \\texttt{apt-get source grep=2.6.3-3}\\\\ 或者 \\texttt{apt-"
+"get source grep/stable}\\\\ 又或者, 使用: \\texttt{apt-get source grep}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid "The \\texttt{grep} source package is composed of three files:"
+msgstr "\\texttt{grep} 原始碼套件主要有 3 個檔案所組成:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid "\\texttt{grep\\_2.6.3-3.dsc}"
+msgstr "\\texttt{grep\\_2.6.3-3.dsc}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid "\\texttt{grep\\_2.6.3-3.debian.tar.bz2}"
+msgstr "\\texttt{grep\\_2.6.3-3.debian.tar.bz2}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid "\\texttt{grep\\_2.6.3.orig.tar.bz2}"
+msgstr "\\texttt{grep\\_2.6.3.orig.tar.bz2}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid "This is typical of the \"3.0 (quilt)\" format."
+msgstr "這些代表 \"3.0 (quilt)\"格式"
+
+#. type: itemize
+#: packaging-tutorial.tex:1528
+msgid ""
+"If needed, uncompress the source with\\\\ \\texttt{dpkg-source -x grep"
+"\\_2.6.3-3.dsc}"
+msgstr ""
+"若有需求, 解壓縮這些原始碼\\\\ \\texttt{dpkg-source -x grep\\_2.6.3-3.dsc}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1547
+msgid "Looking around and building the package"
+msgstr "瞧瞧並且構建套件包"
+
+#. type: itemize
+#: packaging-tutorial.tex:1547
+msgid ""
+"According to \\texttt{debian/control}, this package only generates one "
+"binary package, named \\texttt{grep}."
+msgstr ""
+"根據 \\texttt{debian/control}的設定, 此套件只會產生一個二進制套件, 取名為"
+"\\texttt{grep}."
+
+#. type: itemize
+#: packaging-tutorial.tex:1547
+msgid ""
+"According to \\texttt{debian/rules}, this package is typical of "
+"\\textsl{classic} debhelper packaging, without using \\textsl{CDBS} or "
+"\\textsl{dh}. One can see the various calls to \\texttt{dh\\_*} commands in "
+"\\texttt{debian/rules}."
+msgstr ""
+"根據\\texttt{debian/rules}內容所述, 此套件是採用 \\textsl{classic} debhelper "
+"來進行打包, 而不是使用 \\textsl{CDBS} 或者 \\textsl{dh}. 可以看到它在 "
+"\\texttt{debian/rules}呼叫許多\\texttt{dh\\_*} 指令."
+
+#. type: itemize
+#: packaging-tutorial.tex:1556
+msgid "Use \\texttt{apt-get build-dep grep} to fetch the build-dependencies"
+msgstr "使用 \\texttt{apt-get build-dep grep} 來取得構建相依性"
+
+#. type: itemize
+#: packaging-tutorial.tex:1556
+msgid ""
+"Then \\texttt{debuild} or \\texttt{dpkg-buildpackage -us -uc} (Takes about 1 "
+"min)"
+msgstr ""
+"然後使用 \\texttt{debuild} 或者 \\texttt{dpkg-buildpackage -us -uc} (大約需要"
+"一分鐘)"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1560
+msgid "Editing the changelog"
+msgstr "編輯修改歷程"
+
+#. type: itemize
+#: packaging-tutorial.tex:1577
+msgid ""
+"\\texttt{debian/changelog} is a text file. You could edit it and add a new "
+"entry manually."
+msgstr ""
+"\\texttt{debian/changelog} 是一個文字檔. 你可以手動編輯或者創建一條歷程記錄."
+
+#. type: itemize
+#: packaging-tutorial.tex:1577
+msgid ""
+"Or you can use \\texttt{dch -i}, which will add an entry and open the editor"
+msgstr "或者你可以使用\\texttt{dch -i}, 使用編輯器創建一條歷程記錄"
+
+#. type: itemize
+#: packaging-tutorial.tex:1577
+msgid ""
+"The name and email can be defined using the \\texttt{DEBFULLNAME} and "
+"\\texttt{DEBEMAIL} environment variables"
+msgstr ""
+"名字以及電子郵件的相關設定可透過\\texttt{DEBFULLNAME} and \\texttt{DEBEMAIL}"
+"環境變數來進行配置"
+
+#. type: itemize
+#: packaging-tutorial.tex:1577
+msgid "After that, rebuild the package: a new version of the package is built"
+msgstr "接著重新構建套件: 產生一個新版本套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1577
+msgid ""
+"Package versioning is detailed in section 5.6.12 of the Debian policy\\\\ "
+"\\url{http://www.debian.org/doc/debian-policy/ch-controlfields}"
+msgstr ""
+"套件版本規則被定義在Debian policy 章節 5.6.12\\\\ \\url{http://www.debian."
+"org/doc/debian-policy/ch-controlfields}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1581
+msgid "Disabling Perl regexp support and rebuilding"
+msgstr "移除 Perl 中的正規表示法支援然後重新構建"
+
+#. type: itemize
+#: packaging-tutorial.tex:1597
+msgid ""
+"Check with \\texttt{./configure -{}-help}: the option to disable Perl regexp "
+"is \\texttt{-{}-disable-perl-regexp}"
+msgstr ""
+"確認 \\texttt{./configure -{}-help}: 移除 Perl 正規表示法的選項為\\texttt{-"
+"{}-disable-perl-regexp}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1597
+msgid "Edit \\texttt{debian/rules} and find the \\texttt{./configure} line"
+msgstr "編輯\\texttt{debian/rules} 然後找到\\texttt{./configure}這一行"
+
+#. type: itemize
+#: packaging-tutorial.tex:1597
+msgid "Add \\texttt{-{}-disable-perl-regexp}"
+msgstr "添加 \\texttt{-{}-disable-perl-regexp}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1597
+msgid "Rebuild with \\texttt{debuild} or \\texttt{dpkg-buildpackage -us -uc}"
+msgstr "使用\\texttt{debuild} 或者 \\texttt{dpkg-buildpackage -us -uc}重新構建"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1601
+msgid "Comparing and testing the packages"
+msgstr "比對以及測試套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1627
+msgid "Compare the binary packages: \\texttt{debdiff ../*changes}"
+msgstr "比對二進制套件: \\texttt{debdiff ../*changes}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1627
+msgid "Compare the source packages: \\texttt{debdiff ../*dsc}"
+msgstr "比對原始碼套件: \\texttt{debdiff ../*dsc}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1627
+msgid ""
+"Install the newly built package: \\texttt{debi}\\\\ Or \\texttt{dpkg -i ../"
+"grep\\_<TAB>}"
+msgstr ""
+"安裝新構建成的套件: \\texttt{debi}\\\\ Or \\texttt{dpkg -i ../grep\\_<TAB>}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1627
+msgid "\\texttt{grep -P foo} no longer works!"
+msgstr "\\texttt{grep -P foo} 已失效!"
+
+#. type: frame
+#: packaging-tutorial.tex:1627
+msgid "Or not: reinstall the previous version of the package:"
+msgstr "若無法成功: 重新安裝前一版的套件:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1627
+msgid ""
+"\\texttt{apt-get install -{}-reinstall grep=2.6.3-3} \\textit{(= previous "
+"version)}"
+msgstr ""
+"\\texttt{apt-get install -{}-reinstall grep=2.6.3-3} \\textit{(= previous "
+"version)}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1674 packaging-tutorial.tex:1788
+#: packaging-tutorial.tex:1830 packaging-tutorial.tex:1918
+msgid "Step by step\\ldots"
+msgstr "循序漸進\\ldots"
+
+#. type: itemize
+#: packaging-tutorial.tex:1674
+msgid "\\texttt{wget http://ftp.gnu.org/gnu/gnujump/gnujump-1.0.8.tar.gz}"
+msgstr "\\texttt{wget http://ftp.gnu.org/gnu/gnujump/gnujump-1.0.8.tar.gz}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1674
+msgid "\\texttt{mv gnujump-1.0.8.tar.gz gnujump\\_1.0.8.orig.tar.gz}"
+msgstr "\\texttt{mv gnujump-1.0.8.tar.gz gnujump\\_1.0.8.orig.tar.gz}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1674
+msgid "\\texttt{tar xf gnujump\\_1.0.8.orig.tar.gz}"
+msgstr "\\texttt{tar xf gnujump\\_1.0.8.orig.tar.gz}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1674
+msgid "\\texttt{cd gnujump-1.0.8/}"
+msgstr "\\texttt{cd gnujump-1.0.8/}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1674
+msgid "\\texttt{dh\\_make}"
+msgstr "\\texttt{dh\\_make}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1674
+msgid "Type of package: single binary (for now)"
+msgstr "套件種類: 單一二進制 (for now)"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1674
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\small]\n"
+"gnujump-1.0.8$ ls debian/\n"
+"changelog           gnujump.default.ex   preinst.ex\n"
+"compat              gnujump.doc-base.EX  prerm.ex\n"
+"control             init.d.ex            README.Debian\n"
+"copyright           manpage.1.ex         README.source\n"
+"docs                manpage.sgml.ex      rules\n"
+"emacsen-install.ex  manpage.xml.ex       source\n"
+"emacsen-remove.ex   menu.ex              watch.ex\n"
+"emacsen-startup.ex  postinst.ex\n"
+"gnujump.cron.d.ex   postrm.ex"
+msgstr ""
+"[basicstyle=\\ttfamily\\small]\n"
+"gnujump-1.0.8$ ls debian/\n"
+"changelog           gnujump.default.ex   preinst.ex\n"
+"compat              gnujump.doc-base.EX  prerm.ex\n"
+"control             init.d.ex            README.Debian\n"
+"copyright           manpage.1.ex         README.source\n"
+"docs                manpage.sgml.ex      rules\n"
+"emacsen-install.ex  manpage.xml.ex       source\n"
+"emacsen-remove.ex   menu.ex              watch.ex\n"
+"emacsen-startup.ex  postinst.ex\n"
+"gnujump.cron.d.ex   postrm.ex"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1701 packaging-tutorial.tex:1854
+#: packaging-tutorial.tex:1929
+msgid "Step by step\\ldots (2)"
+msgstr "循序漸進\\ldots (2)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid ""
+"Look at \\texttt{debian/changelog}, \\texttt{debian/rules}, \\texttt{debian/"
+"control}\\\\ (auto-filled by \\textbf{dh\\_make})"
+msgstr ""
+"注意 \\texttt{debian/changelog}, \\texttt{debian/rules}, \\texttt{debian/"
+"control}\\\\ (由 \\textbf{dh\\_make}自動生成)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid ""
+"In \\texttt{debian/control}:\\\\ \\texttt{Build-Depends: debhelper (>= "
+"7.0.50~), autotools-dev}\\\\ Lists the \\textsl{build-dependencies} = "
+"packages needed to build the package"
+msgstr ""
+"在\\texttt{debian/control}:\\\\ \\texttt{Build-Depends: debhelper (>= "
+"7.0.50~), autotools-dev}\\\\ 列出\\textsl{build-dependencies} = packages "
+"needed to build the package"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid "Try to build the package as-is (thanks to \\textbf{dh} magic)"
+msgstr "Try to build the package as-is (thanks to \\textbf{dh} magic)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid "And add build-dependencies, until it builds"
+msgstr "And add build-dependencies, until it builds"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid ""
+"Hint: use \\texttt{apt-cache search} and \\texttt{apt-file} to find the "
+"packages"
+msgstr ""
+"提示: 使用 \\texttt{apt-cache search} 以及 \\texttt{apt-file}來尋找套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid "Example:"
+msgstr "範例:"
+
+#. type: lstlisting
+#: packaging-tutorial.tex:1701
+#, no-wrap
+msgid ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"checking for sdl-config... no\n"
+"checking for SDL - version >= 1.2.0... no\n"
+"[...]\n"
+"configure: error: *** SDL version 1.2.0 not found!"
+msgstr ""
+"[basicstyle=\\ttfamily\\footnotesize]\n"
+"checking for sdl-config... no\n"
+"checking for SDL - version >= 1.2.0... no\n"
+"[...]\n"
+"configure: error: *** SDL version 1.2.0 not found!"
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid ""
+"$\\rightarrow$ Add \\textbf{libsdl1.2-dev} to Build-Depends and install it."
+msgstr "$\\rightarrow$ 將 \\textbf{libsdl1.2-dev} 加入 Build-Depends並且安裝."
+
+#. type: itemize
+#: packaging-tutorial.tex:1701
+msgid "Better: use \\textbf{pbuilder} to build in a clean environment"
+msgstr "建議方法: 使用 \\textbf{pbuilder} 來構建一個乾淨的環境"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1729 packaging-tutorial.tex:1868
+msgid "Step by step\\ldots (3)"
+msgstr "循序漸進\\ldots (3)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid ""
+"After installing \\texttt{libsdl1.2-dev, libsdl-image1.2-dev, libsdl-"
+"mixer1.2-dev}, the package builds fine."
+msgstr ""
+"將 \\texttt{libsdl1.2-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev}安裝後, "
+"可以正常構建套件."
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "Use \\texttt{debc} to list the content of the generated package."
+msgstr "使用 \\texttt{debc} 來列出套件的內容."
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "Use \\texttt{debi} to install it and test it."
+msgstr "使用 \\texttt{debi} 來安裝以及測試."
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "Test the package with \\texttt{lintian}"
+msgstr "使用 \\texttt{lintian}來測試套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid ""
+"While not a strict requirement, it is recommended that packages uploaded to "
+"Debian are \\textsl{lintian-clean}"
+msgstr "雖不是強制性的要求, 但推薦使用 \\textsl{lintian-clean}來上傳套件到Debian"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "More problems can be listed using \\texttt{lintian -EviIL +pedantic}"
+msgstr "可透過 \\texttt{lintian -EviIL +pedantic}列出更多問題"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "Some hints:"
+msgstr "小提示"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "Remove the files that you don't need in \\texttt{debian/}"
+msgstr "移除在\\texttt{debian/}中不必要的檔案"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid "Fill in \\texttt{debian/control}"
+msgstr "填好 \\texttt{debian/control}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid ""
+"Install the executable to \\texttt{/usr/games} by overriding \\texttt{dh"
+"\\_auto\\_configure}"
+msgstr ""
+"透過覆蓋 \\texttt{dh\\_auto\\_configure} 安裝執行檔到 \\texttt{/usr/games} "
+
+#. type: itemize
+#: packaging-tutorial.tex:1729
+msgid ""
+"Use \\textsl{hardening} compiler flags to increase security.\\\\ See "
+"\\url{http://wiki.debian.org/Hardening}"
+msgstr ""
+"使用 \\textsl{hardening} 編譯 flags 來增加安全性.\\\\ 參照 \\url{http://wiki."
+"debian.org/Hardening}"
+
+#. type: frame{#2}
+#: packaging-tutorial.tex:1742
+msgid "Step by step\\ldots (4)"
+msgstr "循序漸進\\ldots (4)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1742
+msgid "Compare your package with the one already packaged in Debian:"
+msgstr "將你的套件和 Debian 上的套件進行差異比對"
+
+#. type: itemize
+#: packaging-tutorial.tex:1742
+msgid ""
+"It splits the data files to a second package, that is the same across all "
+"architectures ($\\rightarrow$ saves space in the Debian archive)"
+msgstr ""
+"它將檔案分開放到第二個套件中, 讓所有平台架構都可以一起共用"
+"($\\rightarrow$ 可讓 Debian 檔案庫節省不必要的空間)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1742
+msgid ""
+"It installs a .desktop file (for the GNOME/KDE menus) and also integrates "
+"into the Debian menu"
+msgstr ""
+"它安裝 .desktop 檔案(給 GNOME/KDE 選單) 並且整合到"
+"Debian 選單中"
+
+#. type: itemize
+#: packaging-tutorial.tex:1742
+msgid "It fixes a few minor problems using patches"
+msgstr "透過補丁來修補一些次要的問題"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "\\texttt{apt-get install javahelper}"
+msgstr "\\texttt{apt-get install javahelper}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "Create a basic source package: \\texttt{jh\\_makepkg}"
+msgstr "創建一個基本的原始碼套件: \\texttt{jh\\_makepkg}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "Library"
+msgstr "函式庫"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "None"
+msgstr "無"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "Default Free compiler/runtime"
+msgstr "Default Free compiler/runtime"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "Look at and fix \\texttt{debian/*}"
+msgstr "修正 \\texttt{debian/*}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "\\texttt{dpkg-buildpackage -us -uc} or \\texttt{debuild}"
+msgstr "\\texttt{dpkg-buildpackage -us -uc} or \\texttt{debuild}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "\\texttt{lintian}, \\texttt{debc}, etc."
+msgstr "\\texttt{lintian}, \\texttt{debc}, 等等."
+
+#. type: itemize
+#: packaging-tutorial.tex:1788
+msgid "Compare your result with the \\texttt{libirclib-java} source package"
+msgstr "將你的套件和\\texttt{libirclib-java}原始碼套件進行差異比對"
+
+#. type: frame
+#: packaging-tutorial.tex:1830
+msgid "\\texttt{gem2deb net-ssh}:"
+msgstr "\\texttt{gem2deb net-ssh}:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Downloads the gem from rubygems.org"
+msgstr "從 rubygems.org 下載 gem 回來"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Creates a suitable .orig.tar.gz archive, and untar it"
+msgstr "建立一個正確的 .orig.tar.gz 檔案,並且解壓縮"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Initializes a Debian source package based on the gem's metadata"
+msgstr "根據描述 gem 套件相關資訊的檔案來初始化 Debian 原始碼套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Named \\texttt{ruby-\\textsl{gemname}}"
+msgstr "命名為 \\texttt{ruby-\\textsl{gemname}}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Tries to build the Debian binary package (this might fail)"
+msgstr "嘗試構建 Debian 二進制套件 (也許會失敗)"
+
+#. type: frame
+#: packaging-tutorial.tex:1830
+msgid ""
+"\\texttt{dh\\_ruby} (included in \\textsl{gem2deb}) does the Ruby-specific "
+"tasks:"
+msgstr "\\texttt{dh\\_ruby} ( 在\\textsl{gem2deb}裡) 執行 Ruby 特定相關任務:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Build C extensions for each Ruby version"
+msgstr "替每個 Ruby 版本皆構建 C 擴充功能"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Copy files to their destination directory"
+msgstr "將檔案複製到每個目的端目錄"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid "Update shebangs in executable scripts"
+msgstr "更新每一個執行腳本中的shebang符號(\\#!)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1830
+msgid ""
+"Run tests defined in \\texttt{debian/ruby-tests.rb} or \\texttt{debian/ruby-"
+"test-files.yaml}, as well as various other checks"
+msgstr ""
+"執行定義在 \\texttt{debian/ruby-tests.rb} 中的測試, 或者其他種類的驗證 "
+"\\texttt{debian/ruby-test-files.yaml}."
+
+#. type: frame
+#: packaging-tutorial.tex:1854 packaging-tutorial.tex:1929
+msgid "Improve the generated package:"
+msgstr "優化產生的套件:"
+
+#. Translators:
+#. This context is very sensitive to line length. If you
+#. hit errors building the package around this line in your translated version
+#. see, e.g. in the Spanish or German version for versions with explicit line
+#. breaks for the translation
+#. type: itemize
+#: packaging-tutorial.tex:1854
+msgid ""
+"Run \\texttt{debclean} to clean the source tree. Look at \\texttt{debian/}."
+msgstr "執行 \\texttt{debclean} 來清除原始碼樹工具. 請看 \\texttt{debian/}."
+
+#. type: itemize
+#: packaging-tutorial.tex:1854
+msgid "\\texttt{changelog} and \\texttt{compat} should be correct"
+msgstr "\\texttt{changelog} 以及 \\texttt{compat}需要被修正"
+
+#. type: itemize
+#: packaging-tutorial.tex:1854
+msgid ""
+"Edit \\texttt{debian/control}: uncomment \\texttt{Homepage}, improve "
+"\\texttt{Description}"
+msgstr ""
+"編輯 \\texttt{debian/control}: 去除註釋 \\texttt{Homepage}, 優化 "
+"\\texttt{Description}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1854
+msgid "Write a proper \\texttt{copyright} file based on the upstream files"
+msgstr "根據上游檔案來寫對應的 \\texttt{copyright} "
+
+#. type: itemize
+#: packaging-tutorial.tex:1854
+msgid "\\texttt{ruby-net-ssh.docs}: install \\texttt{README.rdoc}"
+msgstr "\\texttt{ruby-net-ssh.docs}: 安裝 \\texttt{README.rdoc}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1854
+msgid ""
+"\\texttt{ruby-tests.rb}: run the tests. In that case, it is enough to do:\\"
+"\\ \\verb+$: << 'test' << 'lib' << '.'+\\\\ \\verb+require 'test/test_all."
+"rb'+"
+msgstr ""
+"\\texttt{ruby-tests.rb}: run the tests. In that case, it is enough to do:\\"
+"\\ \\verb+$: << 'test' << 'lib' << '.'+\\\\ \\verb+require 'test/test_all."
+"rb'+"
+
+#. type: frame
+#: packaging-tutorial.tex:1868
+msgid "Build the package.  It fails to build. There are two problems:"
+msgstr "構建套件. 若失敗, 有可能是下列兩個問題:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1868
+msgid ""
+"You need to disable the \\texttt{gem} call in the test suite.\\\\ In "
+"\\texttt{test/common.rb}, remove the \\verb+gem \"test-unit\"+ line:"
+msgstr ""
+"You need to disable the \\texttt{gem} call in the test suite.\\\\ In "
+"\\texttt{test/common.rb}, remove the \\verb+gem \"test-unit\"+ line:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1868
+msgid "\\texttt{edit-patch disable-gem.patch}"
+msgstr "\\texttt{edit-patch disable-gem.patch}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1868
+msgid ""
+"Edit \\texttt{test/common.rb}, remove the \\texttt{gem} line. Exit the sub-"
+"shell"
+msgstr ""
+"編輯 \\texttt{test/common.rb}, 移除\\texttt{gem} line. Exit the sub-shell"
+
+#. type: itemize
+#: packaging-tutorial.tex:1868
+msgid "Describe the changes in \\texttt{debian/changelog}"
+msgstr "將修改歷程記錄到 \\texttt{debian/changelog}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1868
+msgid "Document the patch in \\texttt{debian/patches/disable-gem.patch}"
+msgstr "將補丁文件寫到 \\texttt{debian/patches/disable-gem.patch}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1873
+msgid ""
+"The package lacks a build-dependency on \\texttt{ruby-mocha}, which is used "
+"by the test suite (you might need to build your package in a clean "
+"environment, using \\texttt{pbuilder}, to reproduce that problem)"
+msgstr ""
+"套件缺少 \\texttt{ruby-mocha}構建相依性, 這個會被測試套件所使用 (你也許需要在"
+"乾境環境中構建套件, 使用 \\texttt{pbuilder}, 去重製問題)"
+
+#. type: itemize
+#: packaging-tutorial.tex:1876
+msgid "Add \\texttt{ruby-mocha} to the package's \\texttt{Build-Depends}"
+msgstr "將 \\texttt{ruby-mocha} 加入到套件的 \\texttt{Build-Depends} 中"
+
+#. type: itemize
+#: packaging-tutorial.tex:1887
+msgid ""
+"\\textsl{gem2deb} copies the dependencies documented in the \\textsl{gem} as "
+"comments in \\texttt{debian/control}, but \\textsl{mocha} is not listed as a "
+"development dependency by the gem (that's a bug in the gem)"
+msgstr ""
+"\\textsl{gem2deb} copies the dependencies documented in the \\textsl{gem} as "
+"comments in \\texttt{debian/control}, but \\textsl{mocha} is not listed as a "
+"development dependency by the gem (that's a bug in the gem)"
+
+#. type: frame
+#: packaging-tutorial.tex:1887
+msgid ""
+"Compare your package with the \\texttt{ruby-net-ssh} package in the Debian "
+"archive"
+msgstr "將你的套件和 Debian 檔案庫中的  \\texttt{ruby-net-ssh}  套件比對"
+
+#. type: frame
+#: packaging-tutorial.tex:1918
+msgid "\\verb|dh-make-perl --cpan Acme|:"
+msgstr "\\verb|dh-make-perl --cpan Acme|:"
+
+#. type: itemize
+#: packaging-tutorial.tex:1918
+msgid "Downloads the tarball from the CPAN"
+msgstr "從 CPAN 下載壓縮檔案"
+
+#. type: itemize
+#: packaging-tutorial.tex:1918
+msgid "Creates a suitable .orig.tar.gz archive, and untars it"
+msgstr "創建適合的 .orig.tar.gz 檔案, 並且解壓縮"
+
+#. type: itemize
+#: packaging-tutorial.tex:1918
+msgid ""
+"Initializes a Debian source package based on the distribution's metadata"
+msgstr "根據描述發行版相關資訊的檔案初始化 Debian 原始碼套件"
+
+#. type: itemize
+#: packaging-tutorial.tex:1918
+msgid "Named \\texttt{lib\\textsl{distname}-perl}"
+msgstr "取名為\\texttt{lib\\textsl{distname}-perl}"
+
+#. type: itemize
+#: packaging-tutorial.tex:1929
+msgid ""
+"\\texttt{debian/changelog}, \\texttt{debian/compat}, \\texttt{debian/libacme-"
+"perl.docs}, and \\texttt{debian/watch} should be correct"
+msgstr ""
+"\\texttt{debian/changelog}, \\texttt{debian/compat}, \\texttt{debian/libacme-"
+"perl.docs}, 以及\\texttt{debian/watch} 這些內容需正確無誤"
+
+#. type: itemize
+#: packaging-tutorial.tex:1929
+msgid ""
+"Edit \\texttt{debian/control}: improve \\texttt{Description}, and remove "
+"boilerplate at the bottom"
+msgstr ""
+"編輯 \\texttt{debian/control}: 優化\\texttt{Description}, 並且移除底部的樣版"
+
+#. type: itemize
+#: packaging-tutorial.tex:1929
+msgid ""
+"Edit \\texttt{debian/copyright}: remove boilerplate paragraph at the top, "
+"add years of copyright to the \\texttt{Files:\\hspace{0.3em}*} stanza"
+msgstr ""
+"編輯\\texttt{debian/copyright}: 將置頂的樣版移除, 加入著作權的年份到 "
+"\\texttt{Files:\\hspace{0.3em}*} 的章節中"

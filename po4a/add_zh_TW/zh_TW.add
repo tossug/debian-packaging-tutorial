@@ -1,0 +1,12 @@
+PO4A-HEADER:mode=before;position=\\end{document};beginboundary=NoT_In_ThE_DocUMEnt
+
+\section*{翻譯}
+\begin{frame}{翻譯}
+
+ 本教學指南由 SZ Lin (林上智) 翻譯成繁體中文
+ \hbr
+
+ 若有任何翻譯上的建議, 請發信至
+ \href{mailto:debian-chinese-big5@lists.debian.org}{\texttt{<debian-chinese-big5@lists.debian.org>}}
+
+\end{frame}
