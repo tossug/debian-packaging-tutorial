@@ -1,0 +1,13 @@
+PO4A-HEADER:mode=before;position=\\end{document};beginboundary=NoT_In_ThE_DocUMEnt
+
+\section*{翻訳}
+\begin{frame}{翻訳}
+
+ このチュートリアルは 倉澤 望 が日本語訳しました。
+ \hbr
+
+ この翻訳についての意見・要望は\\
+ \href{mailto:debian-doc@debian.or.jp}{\texttt{<debian-doc@debian.or.jp>}}
+ にお知らせください。
+
+\end{frame}

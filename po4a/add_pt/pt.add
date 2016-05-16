@@ -1,0 +1,12 @@
+PO4A-HEADER:mode=before;position=\\end{document};beginboundary=NoT_In_ThE_DocUMEnt
+
+\section*{Tradução}
+\begin{frame}{Tradução}
+ Américo Monteiro
+ \hbr
+
+ Se encontrar algum erro na tradução deste documento, por favor comunique para
+ \href{mailto:Américo Monteiro}{\texttt{<a\_monteiro@gmx.com>}}.
+ ou
+ \href{mailto:Equipa Debian de Tradução Portuguesa}{\texttt{<traduz@debianpt.org>}}.
+\end{frame}

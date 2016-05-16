@@ -1,0 +1,27 @@
+Translating packaging-tutorial
+==============================
+
+packaging-tutorial is written in LaTeX, and uses po4a. You need some
+texlive packages to build it. If you are not sure of the packages needed
+for your language, just install 'texlive-full' (but it's huge).
+
+Getting the source: debcheckout packaging-tutorial
+
+Generating a translated document:
+- put the .po file in po4a/po/
+- run: dpkg-buildpackage
+  or run: po4a po4a/po4a.cfg --verbose
+    then: pdflatex packaging-tutorial.CODE.tex
+
+Two big warnings:
+1) LaTeX is very sensitive to escape characters and well-balanced parenthesis.
+2) The lstlisting environment, used for code examples in the document, does
+   not support utf8 characters. Generally, it does not make sense to translate
+   most of those parts, as they are code. However, it is still possible to
+   translate the comments, but accented characters must be escaped. See the
+   'fr' translation, and specifically the 'debian/rules using debhelper' slides,
+   for examples.
+
+Crediting your work:
+See po4a/add_fr/fr.add for an example of adding an additional slide at the end,
+and the fr.po file for an example of adding your name on the title slide.

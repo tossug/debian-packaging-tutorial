@@ -1,0 +1,12 @@
+PO4A-HEADER:mode=before;position=\\end{document};beginboundary=NoT_In_ThE_DocUMEnt
+
+\section*{Traduction}
+\begin{frame}{Traduction}
+ Ce tutoriel a été traduit de l'anglais par Cédric Boutillier, Jean-Philippe\ Mengual
+  et l'équipe francophone de traduction.
+ \hbr
+
+ Veuillez signaler toute erreur de traduction ou adresser vos commentaires par
+ courrier électronique, à l'adresse
+ \href{mailto:debian-l10n-french@lists.debian.org}{\texttt{<debian-l10n-french@lists.debian.org>}}.
+\end{frame}

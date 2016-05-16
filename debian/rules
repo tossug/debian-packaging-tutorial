@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ 
+
+#extract version number and date from Debian changelog
+VERSION := $(shell dpkg-parsechangelog | grep "^Version:" | cut -d\  -f2)
+TEXVERSION := $(shell grep 'footnotesize version' packaging-tutorial.tex  | cut -d ' ' -f 3)
+YEAR    := $(shell dpkg-parsechangelog | grep "^Date:" | cut -d\  -f2-5 | date +"%Y")
+MONTH   := $(shell dpkg-parsechangelog | grep "^Date:" | cut -d\  -f2-5 | date +"%m")
+DAY    := $(shell dpkg-parsechangelog | grep "^Date:" | cut -d\  -f2-5 | date +"%d")
+
+
+override_dh_auto_build:
+	# version check
+	if [ $(TEXVERSION) != $(VERSION) ]; then echo "Wrong version in .tex: $(VERSION) != $(TEXVERSION)"; exit 1; fi
+	#translate source files before building pdf
+	po4a po4a/po4a.cfg --verbose
+	dh_auto_build
+
+override_dh_clean:
+	dh_clean
+	#remove translated source files
+	rm -f packaging-tutorial.*.tex debiantutorial.*.sty
+
+override_dh_compress:
+	dh_compress -X.pdf
+
+update-version-date:
+	sed -i -e "s/.* % DATE - use debian\/rules update-version-date/\\\\date{\\\\footnotesize version $(VERSION) -- $(YEAR)-$(MONTH)-$(DAY)} \% DATE - use debian\/rules update-version-date/" packaging-tutorial.tex
+
+po-call:
+	cd po4a && podebconf-report-po --postpone /tmp/po --notdebconf --call

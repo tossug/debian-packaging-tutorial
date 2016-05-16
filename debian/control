@@ -1,0 +1,18 @@
+Source: packaging-tutorial
+Section: doc
+Priority: extra
+Maintainer: Lucas Nussbaum <lucas@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), latex-make, latex-beamer, texlive, texlive-pictures, po4a, texlive-lang-german, texlive-lang-spanish, texlive-lang-french, texlive-lang-cyrillic, texlive-lang-japanese | texlive-lang-cjk (<< 2014.20140513), latex-cjk-common, texlive-latex-extra, texlive-fonts-extra
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/collab-maint/packaging-tutorial.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/packaging-tutorial.git;a=summary
+
+Package: packaging-tutorial
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: introduction to Debian packaging
+ This tutorial is an introduction to Debian packaging. It teaches prospective
+ developers how to modify existing packages, how to create their own packages,
+ and how to interact with the Debian community. In addition to the main
+ tutorial, it includes three practical sessions on modifying the 'grep'
+ package, and packaging the 'gnujump' game and a Java library.

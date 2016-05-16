@@ -1,0 +1,10 @@
+PO4A-HEADER:mode=before;position=\\end{document};beginboundary=NoT_In_ThE_DocUMEnt
+
+\section*{Traducción}
+\begin{frame}{Traducción}
+ Omar Campagne Polaino
+ \hbr
+
+ Si encuentra algún error de traducción en la documentación, envíe un correo a
+ \href{mailto:debian-l10n-spanish@lists.debian.org}{\texttt{<debian-l10n-spanish@lists.debian.org>}}.
+\end{frame}

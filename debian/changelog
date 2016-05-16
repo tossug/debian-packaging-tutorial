@@ -1,0 +1,214 @@
+packaging-tutorial (0.15) unstable; urgency=medium
+
+  [ Helge Kreutzmann ]
+  * Unfuzzy German translation.
+
+  [ Lucas Nussbaum ]
+  * Unfuzzy French translation.
+  * Update standards-version. No changes needed.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Thu, 16 Oct 2014 20:15:36 +0200
+
+packaging-tutorial (0.14) unstable; urgency=low
+
+  [ Helge Kreutzmann ]
+  * Unfuzzy German translation.
+
+  [ Lucas Nussbaum ]
+  * Add a practical session for packaging a CPAN module.
+    Patch from Gregor Herrmann <gregoa@debian.org>. Thanks!
+    Closes: #759758
+  * Update portuguese translation. Thanks to
+    Américo Monteiro <a_monteiro@gmx.com> for the patch.
+    Closes: #756201
+
+ -- Lucas Nussbaum <lucas@debian.org>  Sun, 31 Aug 2014 21:17:48 -0700
+
+packaging-tutorial (0.13) unstable; urgency=medium
+
+  * Add alternative dependency on texlive-lang-japanese following
+    the split of texlive-lang-cjk. Thanks to Gregor Herrmann for the
+    patch! Closes: #751044
+
+ -- Lucas Nussbaum <lucas@debian.org>  Sun, 29 Jun 2014 18:32:42 +0200
+
+packaging-tutorial (0.12) unstable; urgency=low
+
+  * Add Japanese translation from KURASAWA Nozomu (nabetaro)
+    nabetaro@caldron.jp>.
+  * Bump Standards-Version to 3.9.5. No changes needed.
+  * Fix typo in ru's doc-base file.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Thu, 31 Oct 2013 09:56:38 +0100
+
+packaging-tutorial (0.11) unstable; urgency=low
+
+  * Add Russian translation from Lev Lamberov <l.lamberov@gmail.com>.
+  * Add build-depend on texlive-lang-cyrillic.
+  * Russian translation update after review from debian-l10n-russian.
+  * Add doc-base file for Russian.
+  * Add Portuguese translation. Closes: #724782
+  * Minor fixes in portuguese translation to make it build.
+  * Add a README for translators.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Tue, 29 Oct 2013 20:40:55 +0100
+
+packaging-tutorial (0.10) unstable; urgency=low
+
+  [ Lucas Nussbaum ]
+  * Change contact email to packaging-tutorial@p.d.o.
+  * Mention ITP bugs.
+  * Added documentation about the BTS.
+  * Mention localized lists (Closes: #719925).
+  * Update version in .tex.
+  * Add slide: checklist before asking for sponsorship.
+  * Improve 'Contribute' slide.
+  * Update .po / .pot files.
+  * Update CDBS/dh stats.
+
+  [ Helge Kreutzmann ]
+  * Fix two minor translation issues
+  * Update German translation
+
+  [ Cédric Boutillier ]
+  * update French translation
+  * proofread [ Jean-Pierre Giraud ]
+
+ -- Lucas Nussbaum <lucas@debian.org>  Thu, 12 Sep 2013 08:21:00 +0200
+
+packaging-tutorial (0.9) unstable; urgency=low
+
+  [ Helge Kreutzmann ]
+  * Unfuzzy strings
+
+  [ Cédric Boutillier ]
+  * (fr) update translation [proofread by Baptiste, JP Guillonneau]
+  * (fr) proofread [Philippe Piette]
+
+  [ Lucas Nussbaum ]
+  * Update translation files
+  * Add a debian/rule target to warn translators.
+  * Fix typo. Reported by William King.
+  * Add build-dependencies on texlive-lang-{german,spanish,french}.
+    Closes: #712357
+  * Fix minor typo. Patch from Simon Ruderich.
+  * More minor fixes from Simon Ruderich.
+  * Use fragile=singleslide for a faster build. Patch from Simon Ruderich.
+    Closes: #702608
+  * Update URLs to devscripts Vcs. Spotted by Niels Thykier. Closes: #704194
+  * Manually unfuzzy french, german and spanish translations.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Thu, 20 Jun 2013 18:46:19 +0200
+
+packaging-tutorial (0.8) unstable; urgency=low
+
+  * Update spanish translation. Thanks to Omar Campagne. Closes: #681338
+  * Add improvements proposed by Helge Kreutzmann. Closes: #672683
+  * Add new mandatory targets in debian/rules. Thanks to Julien Cristau.
+    Closes: #689287
+  * Fix ES translation to make the package build again.
+  * Re-add note to translators.
+  * Fix what I could fix in DE, FR, ES translations.
+  * Add doc-base entries for .es and .de. Closes: #680180
+  * debian/copyright: Document copyright of the Debian logo. Closes: #685904
+  * Fix gnujump URL. Thanks Henning Sprang and Stéphane Kanschine.
+    Closes: #685359
+  * Check for wrong version in .tex during build
+  * Clarify that mk-build-deps is useful if package not uploaded yet.
+    Closes: #702119
+  * Include many fixes from Francesco Poli. Closes: #686594
+  * Mention Debian Maintainer Dashboard.
+  * Integrate more fixes from Francesco Poli. Closes: #695534
+
+ -- Lucas Nussbaum <lucas@debian.org>  Sun, 03 Mar 2013 11:50:43 +0100
+
+packaging-tutorial (0.7) unstable; urgency=low
+
+  [ Helge Kreutzmann ]
+  * Add German translation. Closes: #672682.
+
+  [ Stefano Zacchiroli ]
+  * LaTeX markup: turn \url{} into hyperlinks using hyperref
+  * LaTeX markup: remove unescaped \textbf{} within lstlisting
+  * DEP-5: point to the policy version of the standard
+
+  [ Lucas Nussbaum ]
+  * Drop the use of LATEXFILTER to ease possible backports of the package.
+    That script was renamed in latex-make 2.1.17-1. Closes: #676748.
+  * Mention that fakeroot must be installed as well as devscripts.
+    Closes: #659126.
+  * es.po: unfuzzied a few strings that did not require language skills.
+  * Bump Standards-Version to 3.9.3. No changes needed.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Wed, 04 Jul 2012 11:47:13 +0200
+
+packaging-tutorial (0.6) unstable; urgency=low
+
+  * Explain -us -uc when building packages.
+  * Mention dch -i.
+  * Explain how to install build-deps using mk-build-deps.
+  * Explain how to unpack the source with dpkg-source -x.
+  * Improve title of VCS slide.
+  * Give example of package adoption.
+  * update po files
+  * update date in document
+  * update po files
+
+ -- Lucas Nussbaum <lucas@debian.org>  Mon, 09 Apr 2012 22:32:06 +0200
+
+packaging-tutorial (0.5) unstable; urgency=low
+
+  [ Lucas Nussbaum ]
+  * Minor updates to french translation during preparation for Capitole du
+    Libre 2011.
+  * Add a debian/rules target to regenerate the version and the date in the
+    document.
+  * Use newer version of grep with recent debian/ubuntu releases due to the ld
+    --as-needed change.
+  * Do not mention patch-tracker twice.
+  * New practical session on gem2deb-based Ruby packaging.
+  * Add slide on backports.
+  * Initial import of spanish translation.
+
+  [ Cédric Boutillier ]
+  * Use changelog to determine automatically date and version
+  * Update French translation
+  * Add subsection for answer to practical session 4
+  * Update POT file
+  * (fr) proofread [Thomas Vincent]
+
+ -- Lucas Nussbaum <lucas@debian.org>  Sat, 14 Jan 2012 07:59:53 +0100
+
+packaging-tutorial (0.4) unstable; urgency=low
+
+  [ David Prévot ]
+  * po4a configuration for the translation process
+
+  [ Cédric Boutillier ]
+  * add French translation
+  * update debian/rules to translate documents at build time
+
+ -- Lucas Nussbaum <lucas@debian.org>  Tue, 18 Oct 2011 07:27:33 +0200
+
+packaging-tutorial (0.3) unstable; urgency=low
+
+  * Merge practical sessions answers into the main document.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Fri, 26 Aug 2011 12:57:56 +0200
+
+packaging-tutorial (0.2) unstable; urgency=low
+
+  * Improvements after tutorial at RMLL 2011:
+    + Use apt-get build-dep to install dash's build dependencies
+      (works on Ubuntu too)
+    + Use --no-install-recommends when installing devscripts
+    + Slight reorganization of the CDBS slide
+    + Deep reorganization of the last part
+
+ -- Lucas Nussbaum <lucas@debian.org>  Tue, 12 Jul 2011 10:59:40 +0200
+
+packaging-tutorial (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Wed, 25 May 2011 21:14:02 +0200

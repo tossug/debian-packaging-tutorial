@@ -1,0 +1,42 @@
+Debian Packaging Tutorial
+=========================
+
+Contact: Lucas Nussbaum <lucas@debian.org>
+
+This tutorial is an introduction to Debian packaging. It teaches prospective
+developers how to modify existing packages, how to create their own packages,
+and how to interact with the Debian community.
+
+It includes a tutorial and three practical sessions:
+ - modifying the 'grep' package
+ - packaging the 'gnujump' game from scratch
+ - packaging a Java library
+
+Contributing to this tutorial
+-----------------------------
+This tutorial is available on git.debian.org:
+Gitweb: http://git.debian.org/?p=collab-maint/packaging-tutorial.git
+or git clone git://git.debian.org/collab-maint/packaging-tutorial.git
+
+Thanks
+------
+Many people have contributed to this tutorial, and it would not be
+possible to list them all there. In particular:
+- Phil Hands contributed to the slides while preparing a tutorial for UKUUG;
+  see http://www.ukuug.org/events/debian2011/
+
+Legal stuff
+-----------
+This tutorial is
+Copyright (c) 2011 Lucas Nussbaum <lucas@debian.org>
+
+This document is free software: you can redistribute it and/or modify it under
+either (at your option):
+- The terms of the GNU General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+  On Debian systems, the complete text of the GNU General
+  Public License version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+  It can also be found on the web: http://www.gnu.org/licenses/gpl.html
+- The terms of the Creative Commons Attribution-ShareAlike 3.0 Unported License,
+  which can be found at http://creativecommons.org/licenses/by-sa/3.0/legalcode.

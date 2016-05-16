@@ -1,0 +1,11 @@
+Document: packaging-tutorial-ja
+Title: Debian Packaging Tutorial (ja)
+Author: Lucas Nussbaum
+Abstract:
+ This tutorial is an introduction to Debian packaging. It teaches prospective
+ developers how to modify existing packages, how to create their own packages,
+ and how to interact with the Debian community (Japanese).
+Section: Debian
+
+Format: PDF
+Files: /usr/share/doc/packaging-tutorial/packaging-tutorial.ja.pdf
